@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({pageLocation}: {pageLocation: string}) {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const navbarItems = [
@@ -42,19 +42,19 @@ export default function Navbar() {
       />
       <div className="flex flex-col md:flex-row align-middle justify-end w-full">
         {navbarItems.map(([itemName, itemLink]) =>
-          Navitem([itemName, itemLink])
+          Navitem([itemName, itemLink], pageLocation)
         )}
       </div>
     </div>
   );
 }
 
-function Navitem([itemName, itemLink]: string[], pageName = "Home") {
+function Navitem([itemName, itemLink]: string[], location: string) {
   return (
     <Link
       href={itemLink}
       className={
-        pageName === itemName
+        location === itemName
           ? "text-lg font-bold m-2 md:m-6"
           : "text-lg m-2 md:m-6"
       }
