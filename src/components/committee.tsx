@@ -7,32 +7,32 @@ export default function Committee() {
         [
             "Academic", 
             "The Academic Committee is the bridge between the ECE department and our undergraduate students who provide feedback to ECE department professors.", 
-            "/academic"
+            "/committee/academic"
         ],
         [
             "Mentorship", 
             "The Mentorship Program builds a community by pairing new students with upperclassmen, providing the guidance they need to be successful socially, professionally, and technically.", 
-            "/mentorship"
+            "/committee/mentorship"
         ],
         [
             "Professional",
             "The Professional Committee works to ensure that ECE students are well-versed in the realm of professional development, from utilizing a network to making a good impression.",
-            "/professional"
+            "/committee/professional"
         ],
         [
             "Social",
             "The Social committee works to ensure that ECE students are rewarded for all their hard work through social events such as meeting new people over boba or group study sessions.",
-            "/social"
+            "/committee/social"
         ],
         [
             "Technical",
             "The technical committee works to ensure ECE students have relevant technical skills for industry, emphasizing hands-on learning through fun workshops and quarter long projects.",
-            "/technical"
+            "/committee/technical"
         ],
         [
             "Women in ECE",
             "The Women in ECE program strives to build a community for an underrepresented group in ECE. WECE strives towards hosting events that can give a better look into this field.",
-            "/wece"
+            "/committee/wece"
         ]
     ]
 
