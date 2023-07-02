@@ -39,7 +39,7 @@ export default function Committee() {
   return (
     <Container type="2">
       <span
-        className="flex text-2xl md:text-4xl text-white justify-center p-8 pt-0"
+        className="flex text-2xl md:text-4xl text-white justify-center p-8 pt-0 font-bold"
         id="committees"
       >
         Our Committees
@@ -58,9 +58,12 @@ function CommitteeItem(name: string, desc: string, redirect: string) {
     <>
       <div className="flex flex-col p-6 h-fit md:h-60 text-center rounded-lg bg-slate-700 shadow-lg">
         <div className="flex flex-row justify-center">
-          <span className="text-2xl text-white p-2 font-bold">{name}</span>
-
-          <Link href={redirect} className="text-2xl text-white pt-3 font-bold">
+          <Link href={redirect}>
+            <span className="text-2xl text-white font-semibold p-2">
+              {name}
+            </span>
+          </Link>
+          <Link href={redirect} className="text-2xl text-white pt-1 font-bold">
             <FaArrowRight />
           </Link>
         </div>

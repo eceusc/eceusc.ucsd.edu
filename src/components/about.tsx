@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <Container type="1">
-      <span className="flex text-2xl md:text-4xl text-white justify-center p-8 pt-0">
+      <span className="flex text-2xl md:text-4xl text-white justify-center p-8 pt-0 font-bold">
         About Us
       </span>
       <div className="sm:w-1/2 m-auto" id="about">
@@ -18,7 +18,7 @@ export default function AboutUs() {
           className="rounded-sm"
         />
       </div>
-      <span className="flex text-center m-auto md:w-1/2 text-white p-2 pt-8 md:p-4 font-normal">
+      <span className="flex text-center m-auto md:w-1/2 text-white p-2 pt-8 md:p-4 font-normal text-lg">
         The ECE Undergraduate Student Council (ECE USC) is the voice of
         Electrical and Computer Engineering (ECE) students at UC San Diego.
         Through community building, networking, and leadership, the council
