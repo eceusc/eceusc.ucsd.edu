@@ -26,7 +26,13 @@ export default function CommitteeBody({
       <div className="grid md:grid-cols-2 gap-4 p-8 md:p-4">
         {images
           ? images.map((src) => (
-              <Image src={src} alt={src} width="400" height="400" />
+              <Image
+                src={src}
+                alt={src}
+                width="400"
+                height="400"
+                className="rounded-sm"
+              />
             ))
           : ""}
       </div>

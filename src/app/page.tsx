@@ -9,7 +9,7 @@ import AboutUs from "../components/about";
 export default function Home() {
   return (
     <Layout>
-      <Navbar pageLocation="Home" hideInitialNav={true}/>
+      <Navbar pageLocation="Home" hideInitialNav={true} />
       <Hero
         title="ECE Undergraduate Student Council"
         body="Representing all ECE Undergraduates at UCSD"

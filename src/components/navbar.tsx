@@ -4,7 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function Navbar({pageLocation, hideInitialNav}: {pageLocation: string, hideInitialNav: boolean}) {
+export default function Navbar({
+  pageLocation,
+  hideInitialNav,
+}: {
+  pageLocation: string;
+  hideInitialNav: boolean;
+}) {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const navbarItems = [
