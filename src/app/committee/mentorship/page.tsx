@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
+import Contact from "../../../components/contact_info"
 
 export default function Mentorship() {
   let titles = ["Mentorship Program"];
@@ -20,6 +21,7 @@ export default function Mentorship() {
       <Navbar pageLocation="Committees" hideInitialNav={false} />
       <Background>
         <CommitteeBody titles={titles} desc={desc} images={images} />
+        <Contact index={[13, 4]}/>
       </Background>
       <Footer />
     </Layout>

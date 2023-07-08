@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
+import Contact from "../../../components/contact_info"
 
 export default function Professional() {
   let titles = ["Professional Events", "Previous Workshop Slides"];
@@ -29,6 +30,7 @@ export default function Professional() {
           images={images}
           files={files}
         />
+        <Contact index={[6, 7]}/>
       </Background>
       <Footer />
     </Layout>

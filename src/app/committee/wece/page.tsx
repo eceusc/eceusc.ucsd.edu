@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
+import Contact from "../../../components/contact_info"
 
 export default function WECE() {
   let titles = ["Women in ECE"];
@@ -19,6 +20,7 @@ export default function WECE() {
       <Navbar pageLocation="Committees" hideInitialNav={false} />
       <Background>
         <CommitteeBody titles={titles} desc={desc} images={images} />
+        <Contact index={[5]} />
       </Background>
       <Footer />
     </Layout>

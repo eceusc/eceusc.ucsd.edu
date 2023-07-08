@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
+import Contact from "../../../components/contact_info"
 
 export default function Academic() {
   let titles = ["Academic Events", "Previous ECE Town Halls"];
@@ -27,6 +28,7 @@ export default function Academic() {
           images={images}
           files={files}
         />
+        <Contact index={[9]}/>
       </Background>
       <Footer />
     </Layout>
