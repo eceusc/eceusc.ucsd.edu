@@ -15,7 +15,6 @@ export default function Social() {
     "/committees/social/social1.png",
     "/committees/social/social2.png",
     "/committees/social/social3.png",
-    "/committees/social/studyPic1.jpg"
   ];
 
   return (

@@ -13,7 +13,6 @@ export default function WECE() {
   let images = [
     "/committees/wece/wece1.png",
     "/committees/wece/wece2.png",
-    "/committees/wece/wecePic1.png",
     "/committees/wece/wecePic2.png",
   ];
 

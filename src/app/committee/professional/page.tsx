@@ -14,7 +14,6 @@ export default function Professional() {
   let images = [
     "/committees/professional/prof1.png",
     "/committees/professional/prof2.png",
-    "/committees/professional/professPic3.JPG",
     "/committees/professional/professPic4.jpg",
   ];
   let files = [
