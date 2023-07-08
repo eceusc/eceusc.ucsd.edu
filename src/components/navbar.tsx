@@ -40,12 +40,12 @@ export default function Navbar({
           : "flex flex-col md:flex-row items-center md:fixed relative top-0 w-screen h-fit p-4 bg-zinc-900 text-white transition shadow-2xl shadow-blue-400 z-50"
       }
     >
-      <Image
+      <a href="/"><Image
         src="/images/logo.svg"
         width="200"
         height="65"
         alt="ECE USC Logo"
-      />
+      /></a>
       <div className="flex flex-col md:flex-row align-middle justify-end w-full">
         {navbarItems.map(([itemName, itemLink]) =>
           Navitem([itemName, itemLink], pageLocation)
