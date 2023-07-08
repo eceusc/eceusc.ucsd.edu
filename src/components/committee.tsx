@@ -37,7 +37,7 @@ export default function Committee() {
   ];
 
   return (
-    <Container type="2">
+    <Container type="2" >
       <span
         className="flex text-2xl md:text-4xl text-white justify-center p-8 pt-0 font-bold"
         id="committees"
