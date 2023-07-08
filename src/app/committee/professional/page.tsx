@@ -12,6 +12,8 @@ export default function Professional() {
     "From workshops to build a good LinkedIn and resume reviews, to elevator pitch workshops and panels with industry professionals, the Professional committee is a great place to learn how to build a successful professional foundation.",
   ];
   let images = [
+    "/committees/professional/prof1.png",
+    "/committees/professional/prof2.png",
     "/committees/professional/professPic3.JPG",
     "/committees/professional/professPic4.jpg",
   ];

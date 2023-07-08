@@ -14,6 +14,8 @@ export default function Mentorship() {
   let images = [
     "/committees/mentorship/mentorPic3.png",
     "/committees/mentorship/mentorPic4.png",
+    "/committees/mentorship/mentorship1.jpg",
+    "/committees/mentorship/mentorship3.png"
   ];
 
   return (

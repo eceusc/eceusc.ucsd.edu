@@ -18,7 +18,7 @@ export default function Join() {
             </div>
             <div>
                 <Hero title="Connect with us on Social Media" body="Follow our Instagram and join our Discord server!" />
-                <div>
+                <div className="grid grid-rows-2 grid-flow-col">
 
                     <a href="https://www.instagram.com/eceusc_ucsd/" target="_blank" className="flex flex-row my-auto">
                         <img className="w-12 h-12 mr-5" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
@@ -28,7 +28,14 @@ export default function Join() {
                         <img className="w-12 h-12 mr-5" src="https://img.icons8.com/fluency/48/discord-logo.png" alt="discord-logo"/>
                         <span className="my-auto text-white hover:font-bold">Discord</span>
                     </a>
-                    
+                    <a href="https://www.linkedin.com/in/ece-usc/" target="_blank" className="flex flex-row my-auto">
+                        <img className="w-12 h-12 mr-5" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+                        <span className="my-auto text-white hover:font-bold">LinkedIn</span>
+                    </a>
+                    <a href="https://www.youtube.com/@eceusc_ucsd" target="_blank" className="flex flex-row my-auto">
+                        <img className="w-12 h-12 mr-5" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>
+                        <span className="my-auto text-white hover:font-bold">Youtube</span>
+                    </a>
                 </div>
             </div>
             <div>
