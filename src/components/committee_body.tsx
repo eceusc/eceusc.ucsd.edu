@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Carousel from "./Carousel";
 
 export default function CommitteeBody({
   titles,
@@ -7,24 +8,25 @@ export default function CommitteeBody({
   videos,
   files,
 }: {
-  titles: string[];
-  desc: string[];
-  images?: string[];
-  videos?: string[];
-  files?: string[];
+  titles: string[],
+  desc: string[],
+  images?: string[],
+  videos?: string[],
+  files?: string[],
 }) {
   return (
     <div className="md:w-1/2 m-auto">
       <div className="text-center font-bold">
         <span className="text-white text-2xl md:text-4xl">{titles[0]}</span>
       </div>
-      <div className="flex flex-col text-center">
+      <div> {/*WAS GOING TO DO FLEX ROW HERE, MAYBE LATER*/}
+      <div className="flex flex-col text-left">
         {desc.map((line) => (
           <span className="text-white p-2 pt-8 md:p-4 font-normal">{line}</span>
         ))}
       </div>
-      <div className="grid md:grid-cols-2 gap-4 p-8 md:p-4">
-        {images
+      {/* <div className="grid md:grid-cols-2 gap-4 p-8 md:p-4"> */}
+        {/* {images
           ? images.map((src) => (
               <Image
                 src={src}
@@ -34,7 +36,11 @@ export default function CommitteeBody({
                 className="rounded-sm"
               />
             ))
-          : ""}
+          : ""} */}
+
+          <Carousel images={images} />
+
+      {/* </div> */}
       </div>
       {titles[1] ? (
         <div className="text-center font-normal">
