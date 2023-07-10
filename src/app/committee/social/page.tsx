@@ -12,9 +12,9 @@ export default function Social() {
   ];
   
   let images = [
-    "/committees/social/social1.png",
-    "/committees/social/social2.png",
-    "/committees/social/social3.png",
+    "/images/committees/social/social1.png",
+    "/images/committees/social/social2.png",
+    "/images/committees/social/social3.png",
   ];
 
   return (

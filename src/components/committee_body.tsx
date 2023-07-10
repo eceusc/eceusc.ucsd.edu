@@ -9,7 +9,7 @@ export default function CommitteeBody({
 }: {
   titles: string[],
   desc: string[],
-  images?: string[],
+  images: string[],
   videos?: string[],
   files?: string[],
 }) {
@@ -21,7 +21,7 @@ export default function CommitteeBody({
       <div> {/*WAS GOING TO DO FLEX ROW HERE, MAYBE LATER*/}
       <div className="flex flex-col text-left">
         {desc.map((line) => (
-          <span className="text-white p-2 pt-8 md:p-4 font-normal">{line}</span>
+          <span className="text-white p-2 pt-8 md:p-4 font-normal" key={line}>{line}</span>
         ))}
       </div>
       {/* <div className="grid md:grid-cols-2 gap-4 p-8 md:p-4"> */}
@@ -57,6 +57,7 @@ export default function CommitteeBody({
                   src={src}
                   width="100%"
                   height="600"
+                  key={src}
                 />
               ))
             : ""}

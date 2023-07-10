@@ -13,10 +13,10 @@ export default function Academic() {
     "Another key Academic event is our ECE Interviews! Click here to view our past interviews and their recordings/slides.",
   ];
   let images = [
-    "/committees/academic/townHall1.jpg",
-    "/committees/academic/townHall2.jpg",
+    "/images/committees/academic/townHall1.jpg",
+    "/images/committees/academic/townHall2.jpg",
   ];
-  let files = ["/committees/academic/Town_Hall-10_27_2020.pdf"];
+  let files = ["/images/committees/academic/Town_Hall-10_27_2020.pdf"];
 
   return (
     <Layout>

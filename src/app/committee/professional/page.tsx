@@ -3,22 +3,20 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
-import Contact from "../../../components/contact_info"
+import Contact from "../../../components/contact_info";
 
 export default function Professional() {
   let titles = ["Professional Events", "Previous Workshop Slides"];
   let desc = [
-    "The professional committee works to ensure that ECE students are competent in the realm of professional development. While technical skills are important for industry and academia, learning how to utilize a network or making a good impression is equally important.",
-    "From workshops to build a good LinkedIn and resume reviews, to elevator pitch workshops and panels with industry professionals, the Professional committee is a great place to learn how to build a successful professional foundation.",
+    "The professional committee works to ensure that ECE students are competent in the realm of professional development. While technical skills are important for industry and academia, learning how to network and making a good impression is equally important in advancing one's career. Our events range from workshops and resume reviews to career panels and fairs. In the end, we hope to bridge the gap between students and industry professionals.",
   ];
   let images = [
-    "/committees/professional/prof1.png",
-    "/committees/professional/prof2.png",
-    "/committees/professional/professPic4.jpg",
+    "/images/committees/professional/profess_pic1.png",
+    "/images/committees/professional/profess_pic2.png",
   ];
   let files = [
-    "/committees/professional/Presentation-01_27_2021.pdf",
-    "/committees/professional/Presentation-10_15_2020.pdf",
+    "/images/committees/professional/Presentation-01_27_2021.pdf",
+    "/images/committees/professional/Presentation-10_15_2020.pdf",
   ];
 
   return (
@@ -31,7 +29,7 @@ export default function Professional() {
           images={images}
           files={files}
         />
-        <Contact index={[6, 7]}/>
+        <Contact index={[6, 7]} />
       </Background>
       <Footer />
     </Layout>

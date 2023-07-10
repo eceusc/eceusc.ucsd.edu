@@ -17,6 +17,7 @@ export default function Navbar({
     ["Home", "/"],
     ["Committees", "/#committees"],
     ["Podcasts", "/podcasts"],
+    ["Our Team", "/team"],
     ["Join", "/join"],
   ];
 

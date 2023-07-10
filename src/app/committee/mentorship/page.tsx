@@ -12,10 +12,10 @@ export default function Mentorship() {
     "By pairing freshman and transfer students with upperclassmen, the Mentorship program ensures that students can get the guidance they need to be successful socially, professionally, and technically. Running all year long, Mentorship hosts a range of events, including 1-1 guidance,hands-on workshop, professional career panel, hands-on workshop, professional career panel, small group socials, and large group socials. Covering topics like building a strong resume and LinkedIn, how to search for internships & jobs, getting involved in research, as well as the best places to study and eat on campus - you're sure to get all your questions answered!",
   ];
   let images = [
-    "/committees/mentorship/mentorPic3.png",
-    "/committees/mentorship/mentorPic4.png",
-    "/committees/mentorship/mentorship1.jpg",
-    "/committees/mentorship/mentorship3.png"
+    "/images/committees/mentorship/mentorPic3.png",
+    "/images/committees/mentorship/mentorPic4.png",
+    "/images/committees/mentorship/mentorship1.jpg",
+    "/images/committees/mentorship/mentorship3.png"
   ];
 
   return (

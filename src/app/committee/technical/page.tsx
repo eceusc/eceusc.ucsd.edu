@@ -11,8 +11,8 @@ export default function Social() {
     "The technical committee works to ensure ECE students have relevant technical skills for industry. While ECE classes may cover academic and theoretical topics, ECE USC’s technical committee emphasizes hands-on learning through fun workshops and quarter long projects. With topics on Arduino and basic circuit building, as well as Python and machine learning, these workshops cover the foundations of what it takes to be an industry-relevant engineer.",
   ];
   let images = [
-    "/committees/technical/projectTeamPic.jpg",
-    "/committees/technical/TechnicalPic2.JPG",
+    "/images/committees/technical/projectTeamPic.jpg",
+    "/images/committees/technical/TechnicalPic2.JPG",
   ];
 
   return (

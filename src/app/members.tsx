@@ -12,7 +12,8 @@ export default [
       ],
       isPrez: true,
       pic: "../../22-23/Kayren.png",
-      email: "k1zheng@ucsd.edu"
+      email: "k1zheng@ucsd.edu",
+      year: "Senior"
     },
     {
       name: "TBD",
@@ -25,12 +26,13 @@ export default [
       ],
       isExec: true,
       pic: "../../22-23/tbd.png",
-      email: ""
+      email: "",
+      year: ""
     },
     {
       name: "Harini Gurusankar",
       position: "VP Internal",
-      major: "Computer engineering",
+      major: "Computer Engineering",
       minor: null,
       depth: "Power",
       lines: [
@@ -39,8 +41,9 @@ export default [
         "Fun Fact: I can speak 5 languages."
       ],
       isExec: true,
-      pic: "../../22-23/Harini.PNG",
-      email: "hgurusan@ucsd.edu"
+      pic: "../../22-23/Harini.png",
+      email: "hgurusan@ucsd.edu",
+      year: "Senior"
     },
     {
       name: "Zarif Mustahsin",
@@ -51,11 +54,12 @@ export default [
       lines: [
         "Part of IEEE QP, RoboCup, Supercomputing, and Kendo",
         "Likes reading light novels, watching KDramas, talking to new people, watching anime, moderating Facebook and discord groups/servers",
-        "Fun Fact: I've been preparing for this my whole life but I cannot remember. Let's go with the fact that my right thumb has a missing crease. Oh, I also hold a black belt in Karate. I'm the RoboCup Soccer Co-Chair if any of you want to join. I WANT TO BUILD BAYMAX BECAUSE HUGS CAN SAVE THE WORLD"
+        "Fun Fact: I hold a black belt in Karate and I'm the RoboCup Soccer Co-Chair."
       ],
       pic: "../../22-23/Zarif.png",
       isFirstRow: true,
-      email: "mmzarif@ucsd.edu"
+      email: "mmzarif@ucsd.edu",
+      year: "Sophomore"
     },
     
     {
@@ -69,7 +73,8 @@ export default [
       ],
       pic: "../../22-23/tbd.png",
       isFirstRow: true,
-      email: "N/A"
+      email: "N/A",
+      year: ""
     },
     {
       name: "Ruilin Hu",
@@ -81,9 +86,10 @@ export default [
         "Loves video games and digital art. Also enjoy running and swimming a lot.",
         'Fun Fact: There has not been one single school/institution that they\'ve stayed for more than three years yet.'
       ],
-      pic: "../../22-23/Ruilin.JPG",
+      pic: "../../22-23/Ruilin.jpg",
       isFirstRow: true,
-      email: "ruhu@ucsd.edu"
+      email: "ruhu@ucsd.edu",
+      year: "Senior"
     },
     {
       name: "Brandon Szeto",
@@ -97,7 +103,8 @@ export default [
       ],
       pic: "../../22-23/Brandon.png",
       isFirstRow: true,
-      email: "bszeto@ucsd.edu"
+      email: "bszeto@ucsd.edu",
+      year: "Junior"
     },
     {
       name: "Haochen Wang",
@@ -112,7 +119,8 @@ export default [
       ],
       pic: "../../22-23/Haochen.png",
       isFirstRow: true,
-      email: "haw057@ucsd.edu"
+      email: "haw057@ucsd.edu",
+      year: "Junior"
     },
     {
       name: "Ricky Li",
@@ -127,7 +135,8 @@ export default [
       ],
       pic: "../../22-23/Ricky.png",
       isSecondRow: true,
-      email: "rili@ucsd.edu"
+      email: "rili@ucsd.edu",
+      year: "Junior"
     },
     {
       name: "Yann Baglin-Bunod",
@@ -142,7 +151,8 @@ export default [
       ],
       pic: "../../22-23/Yann.png",
       isSecondRow: true,
-      email: "ybaglinbunod@ucsd.edu"
+      email: "ybaglinbunod@ucsd.edu",
+      year: "Junior"
     },
     {
       name: "Rana Singh",
@@ -157,7 +167,8 @@ export default [
       ],
       pic: "../../22-23/Rana.png",
       isSecondRow: true,
-      email: "ras010@ucsd.edu"
+      email: "ras010@ucsd.edu",
+      year: "Sophomore"
     },
     {
       name: "Angela Tsai",
@@ -172,21 +183,23 @@ export default [
       ],
       pic: "../../22-23/Angela.png",
       isSecondRow: true,
-      email: "cjt002@ucsd.edu"
+      email: "cjt002@ucsd.edu",
+      year: "Sophomore"
     },
     {
       name: "Basil Thaddeus",
       position: "Webmaster",
-      major: "Cognitive Science w/ spec in Machine Learning and Neural Computation",
+      major: "Cognitive Science",
       minor: null,
-      depth: null,
+      depth: "Machine Learning and Neural Computation",
       lines: [
         "Enjoys hanging out with friends, playing video games, and coding (lame i know).",
-        'Fun Fact: TBD :D'
+        'Fun Fact: I\'ve broken 3 different parts of both hands.'
       ],
       pic: "../../22-23/Basil.png",
       isSecondRow: true,
-      email: "brobertthaddeus@ucsd.edu"
+      email: "brobertthaddeus@ucsd.edu",
+      year: "Junior"
     },
     {
       name: "Joshua Choi",
@@ -201,7 +214,8 @@ export default [
       ],
       pic: "../../22-23/Joshua.png",
       isSeconddRow: true,
-      email: "jmc008@ucsd.edu"
+      email: "jmc008@ucsd.edu",
+      year: "Sophomore"
     },
     {
       name: "Yong Quan Neo",
@@ -215,7 +229,8 @@ export default [
       ],
       pic: "../../22-23/Neo.png",
       isSecondRow: true,
-      email: "yneo@ucsd.edu"
+      email: "yneo@ucsd.edu",
+      year: "Sophomore"
     }
   ];
   

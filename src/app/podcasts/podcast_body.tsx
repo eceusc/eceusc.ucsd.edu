@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import podcastList from "./podcast_info"
@@ -10,7 +10,7 @@ export default function PodcastBody() {
             <span className="text-center font-bold text-2xl md:text-4xl">Podcasts</span>
             <br/>
             <span className="text-justify">
-            In our podcast series, we'll interview undergraduate students from the ECE majors about their experiences in the major as well as extracurricular activities that they did during their time in college. Whether you're studying electrical engineering, planning on transferring to ECE, or simply curious about what’s going on in our major, this podcast is for you! So sit back, relax, and join us as we explore the world of electrical engineering.
+            In our podcast series, we&apos;ll interview undergraduate students from the ECE majors about their experiences in the major as well as extracurricular activities that they did during their time in college. Whether you&apos;re studying electrical engineering, planning on transferring to ECE, or simply curious about what’s going on in our major, this podcast is for you! So sit back, relax, and join us as we explore the world of electrical engineering.
             </span>
           </div>
           <div className="flex flex-col-reverse md:flex-row shadow-xl shadow-slate-400 md:h-[36rem]">

@@ -56,7 +56,7 @@ export default function Committee() {
 function CommitteeItem(name: string, desc: string, redirect: string) {
   return (
     <>
-      <div className="flex flex-col p-6 h-fit md:h-60 text-center rounded-lg bg-slate-700 shadow-lg">
+      <div className="table table-col p-6 h-fit md:h-60 text-center rounded-lg bg-slate-700 shadow-lg">
         <div className="flex flex-row justify-center">
           <Link href={redirect}>
             <span className="text-2xl text-white font-semibold p-2">
