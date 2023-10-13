@@ -62,4 +62,11 @@ export default [
       "In this episode, Kai-Wen from Electrical Engineering (Class of 2023) discusses his philosophy of learning and research as well as some tips and tricks in navigating through college! Throughout his college life, he was involved with electronics and  power system research as well as student organization leadership.",
     url: "https://www.youtube.com/embed/HDQk6cOrGjQ",
   },
+  {
+    episode: 10,
+    guest: "George Troulis",
+    description:
+      "In this episode, George from Computer Engineering (MSCE Class of 2023) and Kayren from Electrical Engineering (Class of 2024) join us to talk about their experience in acquiring expertise beyond school through personal projects. Tune in to hear about some fun anecdotes!",
+    url: "https://www.youtube.com/embed/7HYP2W2IMIM",
+  },
 ];

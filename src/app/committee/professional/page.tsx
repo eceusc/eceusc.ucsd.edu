@@ -11,6 +11,7 @@ export default function Professional() {
     "The professional committee works to ensure that ECE students are competent in the realm of professional development. While technical skills are important for industry and academia, learning how to network and making a good impression is equally important in advancing one's career. Our events range from workshops and resume reviews to career panels and fairs. In the end, we hope to bridge the gap between students and industry professionals.",
   ];
   let images = [
+    "/images/committees/professional/ece_rcf_flyer.png",
     "/images/committees/professional/profess_pic1.png",
     "/images/committees/professional/profess_pic2.png",
   ];
@@ -29,7 +30,7 @@ export default function Professional() {
           images={images}
           files={files}
         />
-        <Contact index={[6, 7]} />
+        <Contact index={[6]} />
       </Background>
       <Footer />
     </Layout>

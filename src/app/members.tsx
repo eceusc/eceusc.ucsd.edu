@@ -46,7 +46,7 @@ export default [
       year: "Senior"
     },
     {
-      name: "Zarif Mustahsin",
+      name: "Mustahsin Zarif",
       position: "Secretary",
       major: "Electrical Engineering",
       minor: null,
@@ -61,7 +61,6 @@ export default [
       email: "mmzarif@ucsd.edu",
       year: "Sophomore"
     },
-    
     {
       name: "TBD",
       position: "Mentorship Chair",
@@ -93,7 +92,7 @@ export default [
     },
     {
       name: "Brandon Szeto",
-      position: "Co-Professional Chair",
+      position: "Professional Chair",
       major: "Computer Engineering",
       minor: null,
       depth: null,
@@ -107,20 +106,18 @@ export default [
       year: "Junior"
     },
     {
-      name: "Haochen Wang",
+      name: "TBD",
       position: "Co-Professional Chair",
-      major: "Computer Engineering",
+      major: "N/A",
       minor: null,
       depth: null,
       lines: [
-        "Part of E4E and work as Math grader.",
-        "Likes electronic music.",
-        'Fun Fact: I took 8 classes in the summer of my freshman year.'
+        "N/A"
       ],
-      pic: "../../22-23/Haochen.png",
+      pic: "../../22-23/tbd.png",
       isFirstRow: true,
-      email: "haw057@ucsd.edu",
-      year: "Junior"
+      email: "N/A",
+      year: ""
     },
     {
       name: "Ricky Li",
@@ -139,20 +136,18 @@ export default [
       year: "Junior"
     },
     {
-      name: "Yann Baglin-Bunod",
+      name: "TBD",
       position: "Academic Chair",
-      major: "Electrical Engineering",
+      major: "N/A",
       minor: null,
-      depth: "Machine Learning and Controls",
+      depth: null,
       lines: [
-        "Part of Triton Rock Climbing Team.",
-        "Enjoys surfing, rock Climbing, and food!.",
-        'Fun Fact: I climbed a glacier.'
+        "N/A",
       ],
-      pic: "../../22-23/Yann.png",
+      pic: "../../22-23/tbd.png",
       isSecondRow: true,
-      email: "ybaglinbunod@ucsd.edu",
-      year: "Junior"
+      email: "N/A",
+      year: ""
     },
     {
       name: "Rana Singh",
@@ -194,7 +189,7 @@ export default [
       depth: "Machine Learning and Neural Computation",
       lines: [
         "Enjoys hanging out with friends, playing video games, and coding (lame i know).",
-        'Fun Fact: I\'ve broken 3 different parts of both hands.'
+        'Fun Fact: I\'ve broken 3 different parts of both my hands.'
       ],
       pic: "../../22-23/Basil.png",
       isSecondRow: true,
@@ -219,7 +214,7 @@ export default [
     },
     {
       name: "Yong Quan Neo",
-      position: "Mentorship Social Chair",
+      position: "Technical Project Chair",
       major: "Electrical Engineering",
       minor: null,
       depth: "Computer System Design",

@@ -40,15 +40,15 @@ export default function Join() {
                 </div>
             </div>
             <div>
-                <Hero title="Apply for Our Mentorship Program" body="Our mentorship program opens up in fall quarter!" />
-                <a href="" target="_blank">
-                    <button className="p-3 px-8 bg-gray-600 text-gray-300 rounded my-5 font-bold cursor-not-allowed" disabled>Apply</button>
+                <Hero title="Apply for Our Mentorship Program" body="Our mentorship program is open during the fall quarter!" />
+                <a href="https://forms.gle/pBoZ5pqQYW7ugpR36" target="_blank">
+                <button className="p-3 px-8 bg-gray-700 text-white rounded my-5 hover:bg-white hover:text-black hover:transition-all font-bold">Apply</button>
                 </a>
             </div>
             <div>
-                <Hero title="Apply for Our Shadowing Program" body="Application opens up in spring quarter!" />
-                <a href="" target="_blank">
-                    <button className="p-3 px-8 bg-gray-600 text-gray-300 rounded my-5 font-bold cursor-not-allowed" disabled>Apply</button>
+                <Hero title="Apply for a Council Position" body="Our council applications are currently open!" />
+                <a href="https://forms.gle/46sUjwumUC7GKWP56" target="_blank">
+                    <button className="p-3 px-8 bg-gray-700 text-white rounded my-5 hover:bg-white hover:text-black hover:transition-all font-bold">Apply</button>
                 </a>
             </div>
         </div>
