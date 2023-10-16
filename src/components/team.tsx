@@ -23,7 +23,7 @@ export default function Team({
 	lines: string[];
 }) {
 	return (
-		<div className="flex flex-col text-center bg-slate-800 rounded-lg p-6 m-4 text-white shadow-sm shadow-slate-800">
+		<div className="flex flex-col text-center bg-slate-800 rounded-lg p-6 m-4 text-white shadow-sm shadow-slate-900">
 			<div className="m-2">
 				<Image
 					src={pic}

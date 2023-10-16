@@ -34,7 +34,7 @@ export default function Mentorship() {
       <Navbar pageLocation="Committees" hideInitialNav={false} />
       <Background>
       <CommitteeBody titles={titles} desc={desc} secondaryDesc={secondaryDesc} button={button} images={images} files={files}/>
-        <Contact index={[13, 4]}/>
+        <Contact names={["Joshua", ""]}/>
       </Background>
       <Footer />
     </Layout>

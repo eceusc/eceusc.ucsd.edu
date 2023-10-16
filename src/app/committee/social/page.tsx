@@ -22,7 +22,7 @@ export default function Social() {
       <Navbar pageLocation="Committees" hideInitialNav={false} />
       <Background>
         <CommitteeBody titles={titles} desc={desc} images={images} />
-        <Contact index={[8]} />
+        <Contact names={["Ricky"]} />
       </Background>
       <Footer />
     </Layout>

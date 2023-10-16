@@ -13,7 +13,7 @@ export default function Podcasts() {
 				<div className="text-center font-bold md:pb-4">
 					<span className="text-white text-2xl md:text-4xl">Meet the Team</span>
 				</div>
-				<div className="lg:w-1/2 m-auto grid md:grid-cols-2">
+				<div className="sm:w-1/2 lg:w-2/3 m-auto grid lg:grid-cols-2 xl:grid-cols-3">
 					{members
 						.filter((m) => m.name != "TBD")
 						.map((m) => (

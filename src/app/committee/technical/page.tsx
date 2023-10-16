@@ -30,7 +30,7 @@ export default function Social() {
       <Navbar pageLocation="Committees" hideInitialNav={false} />
       <Background>
         <CommitteeBody titles={titles} desc={desc} secondaryDesc={secondaryDesc} button={button} images={images} files={files}/>
-        <Contact index={[10, 14]} />
+        <Contact names={["Rana", "Neo"]} />
       </Background>
       <Footer />
     </Layout>

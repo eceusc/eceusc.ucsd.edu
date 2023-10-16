@@ -21,7 +21,7 @@ export default function WECE() {
       <Navbar pageLocation="Committees" hideInitialNav={false} />
       <Background>
         <CommitteeBody titles={titles} desc={desc} images={images} />
-        <Contact index={[5]} />
+        <Contact names={["Ruilin", "Kaitlin"]} />
       </Background>
       <Footer />
     </Layout>

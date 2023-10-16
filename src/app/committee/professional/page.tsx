@@ -30,7 +30,7 @@ export default function Professional() {
           images={images}
           files={files}
         />
-        <Contact index={[6]} />
+        <Contact names={["Brandon"]} />
       </Background>
       <Footer />
     </Layout>

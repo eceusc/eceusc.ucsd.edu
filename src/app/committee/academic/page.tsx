@@ -28,7 +28,7 @@ export default function Academic() {
           images={images}
           files={files}
         />
-        <Contact index={[9]}/>
+        <Contact names={[""]}/>
       </Background>
       <Footer />
     </Layout>
