@@ -56,20 +56,18 @@ export default function Committee() {
 function CommitteeItem(name: string, desc: string, redirect: string) {
 	return (
 		<>
-			<div className="grid grid-flow-row p-6  rounded-lg bg-slate-700 shadow-xl">
-				<div className="flex justify-between items-center">
-					<Link href={redirect}>
-						<span className="text-2xl text-white font-semibold">
-							{name}
-						</span>
-					</Link>
-					<Link href={redirect}>
-						<FaArrowRight className="text-2xl text-white font-semibold" />
-					</Link>
+			<div className="grid grid-flow-col grid-cols-8 rounded-lg bg-slate-700 shadow-sm shadow-slate-800">
+				<div className="flex flex-col col-start-1 col-end-8 p-8">
+					<span className="text-2xl text-white font-semibold">{name}</span>
+					<div className="tracking-normal">
+						<span className="text-lg text-white indent-0">{desc}</span>
+					</div>
 				</div>
-				<div className="tracking-normal p-2">
-					<span className="text-lg text-white indent-0">{desc}</span>
-				</div>
+				<Link href={redirect}>
+					<div className="flex flex-col justify-center m-auto col-start-8 rounded-r-lg bg-slate-800 hover:bg-slate-900 hover:shadow-slate-900 shadow-sm shadow-slate-800 h-full transition-all">
+						<FaArrowRight className="text-2xl text-white font-semibold self-center" />
+					</div>
+				</Link>
 			</div>
 		</>
 	);
