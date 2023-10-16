@@ -14,13 +14,14 @@ export default function Home() {
         title="ECE Undergraduate Student Council"
         body="Representing all ECE Undergraduates at UCSD"
       />
-      <div className="blur-sm sm:blur-none">
+      <div className="scale-150 sm:scale-100">
         <Image
           src="/images/background.jpg"
           alt="UCSD Falling Star Building"
           width="3200"
           height="1800"
           key="falling-star"
+          className="blur-[2px] sm:blur-none"
         />
       </div>
       <AboutUs />

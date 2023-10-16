@@ -18,13 +18,11 @@ export default function Social() {
 	let images = [
 		"/images/committees/technical/projectTeamPic.jpg",
 		"/images/committees/technical/TechnicalPic2.jpg",
-		"/images/committees/technical/2023F_guided_qp.png",
 	];
   let flyers = [
     "/images/committees/technical/2023F_guided_qp.png",
   ]
 	let files = [
-		"/images/committees/technical/2023F_guided_qp.png",
 		"https://drive.google.com/file/d/1e4MbFcUu_ifKBuET9UwVkdm_KgyZPs8O/preview",
 	];
 

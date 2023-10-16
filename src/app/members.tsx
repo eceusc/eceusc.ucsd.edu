@@ -3,7 +3,7 @@ export default [
 		// This object is a rebound for components/contact_info.tsx
 		// when empty args are provided.
 		name: "TBD",
-		position: "No Position",
+		position: "Open Position",
 		major: "N/A",
 		minor: null,
 		depth: null,
