@@ -25,7 +25,7 @@ export default function Mentorship() {
     ["Apply", "https://forms.gle/pBoZ5pqQYW7ugpR36"],
     ["Zoom Link", "https://zoom.us/j/6251769216?pwd=dHJ1ME5FTXpscGZ6ajBtRFZCVGMwQT09"]
   ]
-  let files = [
+  let flyers = [
     "/images/committees/mentorship/mentor_recruit_poster.jpg"
   ]
 
@@ -33,7 +33,7 @@ export default function Mentorship() {
     <Layout>
       <Navbar pageLocation="Committees" hideInitialNav={false} />
       <Background>
-      <CommitteeBody titles={titles} desc={desc} secondaryDesc={secondaryDesc} button={button} images={images} files={files}/>
+      <CommitteeBody titles={titles} desc={desc} secondaryDesc={secondaryDesc} button={button} images={images} flyers={flyers}/>
         <Contact names={["Joshua", ""]}/>
       </Background>
       <Footer />
