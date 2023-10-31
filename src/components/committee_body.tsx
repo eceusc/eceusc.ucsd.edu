@@ -1,10 +1,6 @@
 import Carousel from "./Carousel";
 import Image from "next/image";
-
-type File = {
-	title: string;
-	src: string;
-};
+import { File } from "@/app/types";
 
 export default function CommitteeBody({
 	titles,

@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
 import Contact from "../../../components/contact_info";
+import { File } from "@/app/types";
 
 export default function Academic() {
 	let titles = ["Academic Events", "Previous ECE Town Halls"];
@@ -16,10 +17,12 @@ export default function Academic() {
 		"/committees/academic/townHall1.jpg",
 		"/committees/academic/townHall2.jpg",
 	];
-	let files = {
-		"Town Hall Event 10-27-2020":
-			"/committees/academic/Town_Hall-10_27_2020.pdf",
-	};
+	let files: File[] = [
+		{
+			title: "Town Hall Event 10-27-2020",
+			src: "/committees/academic/Town_Hall-10_27_2020.pdf",
+		},
+	];
 
 	return (
 		<Layout>

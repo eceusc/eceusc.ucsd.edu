@@ -5,13 +5,13 @@ import podcastList from "./podcast_info";
 export default function PodcastBody() {
 	const [currentPodcast, setCurrentPodcast] = useState(podcastList.length - 1);
 	return (
-		<div className="lg:w-3/4 h-full m-auto">
+		<div className="lg:w-3/4 h-full md:m-auto mt-20">
 			<div className="grid text-white  pb-4 sm:pb-8">
 				<span className="text-center font-bold text-2xl md:text-4xl">
 					Podcasts
 				</span>
 				<br />
-				<span className="text-justify">
+				<span className="text-center">
 					In our podcast series, we&apos;ll interview undergraduate students
 					from the ECE majors about their experiences in the major as well as
 					extracurricular activities that they did during their time in college.
@@ -37,7 +37,7 @@ export default function PodcastBody() {
 						className="border-none p-2"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					/>
-					<div className="p-2 text-justify">
+					<div className="p-2 text-center md:text-left">
 						<span className="text-white">
 							{podcastList[currentPodcast].description}
 						</span>

@@ -10,7 +10,7 @@ export default function TeamPage() {
 		<Layout>
 			<Navbar pageLocation="Our Team" hideInitialNav={false} />
 			<Background>
-				<div className="text-center font-bold md:pb-4">
+				<div className="text-center font-bold md:pb-4 mt-20 md:m-auto">
 					<span className="text-white text-2xl md:text-4xl">Meet the Team</span>
 				</div>
 				<div className="sm:w-1/2 lg:w-2/3 m-auto grid lg:grid-cols-2 xl:grid-cols-3">

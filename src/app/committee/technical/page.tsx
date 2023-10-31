@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
 import Contact from "../../../components/contact_info";
+import { File } from "@/app/types";
 
 export default function Social() {
 	let titles = ["Technical Events", "Fall 2023 Guided Quarterly Project"];
@@ -20,10 +21,12 @@ export default function Social() {
 		"/committees/technical/TechnicalPic2.jpg",
 	];
 	let flyers = ["/committees/technical/2023F_guided_qp.png"];
-	let files = {
-		"Tech Demo":
-			"https://drive.google.com/file/d/1e4MbFcUu_ifKBuET9UwVkdm_KgyZPs8O/preview",
-	};
+	let files = [
+		{
+			title: "Tech Demo",
+			src: "https://drive.google.com/file/d/1e4MbFcUu_ifKBuET9UwVkdm_KgyZPs8O/preview",
+		},
+	];
 
 	return (
 		<Layout>
