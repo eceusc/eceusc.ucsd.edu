@@ -18,15 +18,15 @@ export default function CommitteeBody({
 	button?: string[][];
 	images: string[];
 	videos?: string[];
-	files?: string[];
+	files?: object;
 }) {
 	return (
-		<div className="md:w-1/2 m-auto">
+		<div className="md:w-1/2 m-auto mt-20 sm:m-auto">
 			<div className="text-center font-bold">
 				<span className="text-white text-2xl md:text-4xl">{titles[0]}</span>
 			</div>
 			<div>
-				<div className="flex flex-col text-left">
+				<div className="flex flex-col text-center sm:text-left">
 					{desc.map((line) => (
 						<span className="text-white p-2 pt-8 md:p-4 font-normal" key={line}>
 							{line}
@@ -56,7 +56,7 @@ export default function CommitteeBody({
 										height={600}
 										key={src}
 									/>
-							))
+							  ))
 							: ""}
 					</div>
 				</div>
@@ -91,16 +91,14 @@ export default function CommitteeBody({
 			)}
 
 			{files ? (
-				<div className="grid md:grid-cols-1 gap-4 p-8 md:p-4">
+				<div className="grid md:grid-cols-2 gap-4 p-8 md:p-4">
 					{files
-						? files.map((src) => (
-								<iframe
-									title={src.substring(0, src.length - 4)}
-									src={src + "#view=Fit"}
-									width="100%"
-									height="600"
-									key={src}
-								/>
+						? Object.keys(files).map((key) => (
+								<a href={files[key]} target="_blank">
+									<div className="bg-slate-600 w-full h-full text-white p-4 rounded hover:bg-slate-700 transition">
+										<span>{key}</span>
+									</div>
+								</a>
 						  ))
 						: ""}
 				</div>

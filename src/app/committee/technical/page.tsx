@@ -16,15 +16,14 @@ export default function Social() {
 	];
 	let button = [["Apply", "https://forms.gle/1xR9AFFiPfJDY6Us6"]];
 	let images = [
-		"/images/committees/technical/projectTeamPic.jpg",
-		"/images/committees/technical/TechnicalPic2.jpg",
+		"/committees/technical/projectTeamPic.jpg",
+		"/committees/technical/TechnicalPic2.jpg",
 	];
-  let flyers = [
-    "/images/committees/technical/2023F_guided_qp.png",
-  ]
-	let files = [
-		"https://drive.google.com/file/d/1e4MbFcUu_ifKBuET9UwVkdm_KgyZPs8O/preview",
-	];
+	let flyers = ["/committees/technical/2023F_guided_qp.png"];
+	let files = {
+		"Tech Demo":
+			"https://drive.google.com/file/d/1e4MbFcUu_ifKBuET9UwVkdm_KgyZPs8O/preview",
+	};
 
 	return (
 		<Layout>
@@ -37,7 +36,7 @@ export default function Social() {
 					button={button}
 					images={images}
 					files={files}
-          			flyers={flyers}
+					flyers={flyers}
 				/>
 				<Contact names={["Rana", "Neo"]} />
 			</Background>
