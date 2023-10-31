@@ -1,6 +1,11 @@
 import Carousel from "./Carousel";
 import Image from "next/image";
 
+type File = {
+	title: string;
+	src: string;
+};
+
 export default function CommitteeBody({
 	titles,
 	desc,
@@ -18,7 +23,7 @@ export default function CommitteeBody({
 	button?: string[][];
 	images: string[];
 	videos?: string[];
-	files?: object;
+	files?: File[];
 }) {
 	return (
 		<div className="md:w-1/2 m-auto mt-20 sm:m-auto">
@@ -92,15 +97,13 @@ export default function CommitteeBody({
 
 			{files ? (
 				<div className="grid md:grid-cols-2 gap-4 p-8 md:p-4">
-					{files
-						? Object.keys(files).map((key) => (
-								<a href={files[key]} target="_blank">
-									<div className="bg-slate-600 w-full h-full text-white p-4 rounded hover:bg-slate-700 transition">
-										<span>{key}</span>
-									</div>
-								</a>
-						  ))
-						: ""}
+					{files.map((obj) => (
+						<a href={obj.src} target="_blank">
+							<div className="bg-slate-600 w-full h-full text-white p-4 rounded hover:bg-slate-700 transition">
+								<span>{obj.title}</span>
+							</div>
+						</a>
+					))}
 				</div>
 			) : (
 				""

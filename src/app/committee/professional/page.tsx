@@ -5,6 +5,11 @@ import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
 import Contact from "../../../components/contact_info";
 
+type File = {
+	title: string;
+	src: string;
+};
+
 export default function Professional() {
 	let titles = ["Professional Events", "Previous Workshop Slides"];
 	let desc = [
@@ -14,12 +19,16 @@ export default function Professional() {
 		"/committees/professional/profess_pic1.png",
 		"/committees/professional/profess_pic2.png",
 	];
-	let files = {
-		"Innovating your Linkedin Profile":
-			"/committees/professional/Presentation-01_27_2021.pdf",
-		"Why Are Internships Important?":
-			"/committees/professional/Presentation-10_15_2020.pdf",
-	};
+	let files: File[] = [
+		{
+			title: "Innovating your Linkedin Profile",
+			src: "/committees/professional/Presentation-01_27_2021.pdf",
+		},
+		{
+			title: "Why Are Internships Important?",
+			src: "/committees/professional/Presentation-10_15_2020.pdf",
+		},
+	];
 
 	let flyers = ["/committees/professional/ece_rcf_flyer.png"];
 
