@@ -30,7 +30,7 @@ export default function Team({
 					alt={name}
 					width={100}
 					height={100}
-					className="rounded-full outline outline-2 outline-offset-4 outline-slate-700 m-auto"
+					className="rounded-full outline outline-2 outline-offset-4 outline-slate-700 hover:outline-slate-300 transition-all m-auto"
 				/>
 			</div>
 

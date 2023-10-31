@@ -5,7 +5,7 @@ import Footer from "@/components/footer";
 import Team from "@/components/team";
 import members from "../members";
 
-export default function Podcasts() {
+export default function TeamPage() {
 	return (
 		<Layout>
 			<Navbar pageLocation="Our Team" hideInitialNav={false} />

@@ -19,12 +19,12 @@ export default function Carousel({ images }:{images: string[]}) {
   };
 
   return (
-    <div className="relative">
+    <div className="relative h-[50vh] p-4 flex flex-col justify-center align-middle">
       <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       />
-      <div className="w-fit h-[50vh] flex overflow-hidden relative m-auto">
+      <div className="w-fit h-fit flex overflow-hidden relative m-auto flex-col items-center">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -39,7 +39,7 @@ export default function Carousel({ images }:{images: string[]}) {
                   alt={"src"}
                   width="500"
                   height="1000"
-                  className="animate-fade-in self-center"
+                  className="animate-fade-in"
                 />
               );
             }
