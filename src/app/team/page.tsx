@@ -7,7 +7,7 @@ import members from "../members";
 
 export default function TeamPage() {
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Our Team" hideInitialNav={false} />
 			<Background>
 				<div className="text-center font-bold md:pb-4 mt-20 md:m-auto">
@@ -33,6 +33,6 @@ export default function TeamPage() {
 				</div>
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

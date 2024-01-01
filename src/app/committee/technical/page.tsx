@@ -29,7 +29,7 @@ export default function Social() {
 	];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -44,6 +44,6 @@ export default function Social() {
 				<Contact names={["Rana", "Neo"]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

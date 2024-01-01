@@ -5,13 +5,13 @@ import Footer from "@/components/footer";
 import PodcastBody from "./podcast_body";
 
 export default function Podcasts() {
-  return (
-    <Layout>
-      <Navbar pageLocation="Podcasts" hideInitialNav={false} />
-      <Background>
-        <PodcastBody />
-      </Background>
-      <Footer />
-    </Layout>
-  );
+	return (
+		<>
+			<Navbar pageLocation="Podcasts" hideInitialNav={false} />
+			<Background>
+				<PodcastBody />
+			</Background>
+			<Footer />
+		</>
+	);
 }

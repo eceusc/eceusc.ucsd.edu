@@ -53,7 +53,10 @@ export default function Committee() {
 function CommitteeItem(name: string, desc: string, redirect: string) {
 	return (
 		<>
-			<div className="grid grid-flow-col grid-cols-8 rounded-lg bg-slate-700 shadow-sm shadow-slate-800">
+			<div
+				className="grid grid-flow-col grid-cols-8 rounded-lg bg-slate-700 shadow-sm shadow-slate-800"
+				key={name}
+			>
 				<div className="flex flex-col col-start-1 col-end-8 p-8">
 					<span className="text-2xl text-white font-semibold">{name}</span>
 					<div className="tracking-normal">

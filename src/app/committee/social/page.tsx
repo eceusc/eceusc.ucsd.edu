@@ -18,13 +18,13 @@ export default function Social() {
 	];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody titles={titles} desc={desc} images={images} />
 				<Contact names={["Ricky"]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

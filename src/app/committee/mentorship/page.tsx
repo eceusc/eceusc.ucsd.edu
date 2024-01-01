@@ -31,7 +31,7 @@ export default function Mentorship() {
 	let flyers = ["/committees/mentorship/mentor_recruit_poster.jpg"];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -45,6 +45,6 @@ export default function Mentorship() {
 				<Contact names={["Joshua", ""]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

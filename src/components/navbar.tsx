@@ -41,7 +41,7 @@ export default function Navbar({
 				className={
 					scrollPosition < 50 && hideInitialNav
 						? "grid grid-cols-2 bg-zinc-900 text-white p-4 z-30 w-full fixed md:flex md:flex-row md:bg-transparent transition"
-						: "grid grid-cols-2 bg-zinc-900 text-white p-4 z-30 w-full fixed md:flex md:flex-row md:shadow-2xl md:shadow-blue-400 transition"
+						: "grid grid-cols-2 bg-zinc-900 text-white p-4 z-30 w-full fixed md:flex md:flex-row md:shadow-md md:shadow-blue-400 transition"
 				}
 			>
 				<div className="">

@@ -29,7 +29,7 @@ export default function Professional() {
 	let flyers = ["/committees/professional/ece_rcf_flyer.png"];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -42,6 +42,6 @@ export default function Professional() {
 				<Contact names={["Brandon"]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

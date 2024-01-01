@@ -7,7 +7,7 @@ import { FaDiscord, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 export default function Join() {
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Join" hideInitialNav={false} />
 			<Background>
 				<div className="grid grid-rows-4 md:grid-rows-2 grid-flow-col lg:gap-12 place-content-center gap-4 p-4 mt-20 md:m-auto">
@@ -98,6 +98,6 @@ export default function Join() {
 				</div>
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

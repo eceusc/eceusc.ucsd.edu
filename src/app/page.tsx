@@ -8,7 +8,7 @@ import AboutUs from "../components/about";
 
 export default function Home() {
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Home" hideInitialNav={true} />
 			<Hero
 				title="ECE Undergraduate Student Council"
@@ -34,6 +34,6 @@ export default function Home() {
 			<AboutUs />
 			<Committee />
 			<Footer />
-		</Layout>
+		</>
 	);
 }

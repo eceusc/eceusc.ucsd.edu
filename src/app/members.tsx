@@ -1,4 +1,4 @@
-export default [
+let members = [
 	{
 		// This object is a rebound for components/contact_info.tsx
 		// when empty args are provided.
@@ -100,7 +100,7 @@ export default [
 		minor: null,
 		depth: null,
 		lines: ["TBD", "Fun Fact: I ride a motorcycle."],
-		pic: "../../22-23/Kaitlin.jpg",
+		pic: "../../22-23/Kaitlin.png",
 		email: "kcalimbahin@ucsd.edu",
 		year: "Junior",
 	},
@@ -226,3 +226,5 @@ export default [
 		year: "Sophomore",
 	},
 ];
+
+export default members;

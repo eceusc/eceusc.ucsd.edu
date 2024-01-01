@@ -17,13 +17,13 @@ export default function WECE() {
 	];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody titles={titles} desc={desc} images={images} />
 				<Contact names={["Ruilin", "Kaitlin"]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

@@ -25,7 +25,7 @@ export default function Academic() {
 	];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -37,6 +37,6 @@ export default function Academic() {
 				<Contact names={[""]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

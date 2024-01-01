@@ -22,7 +22,7 @@ export default function CommitteeBody({
 	files?: File[];
 }) {
 	return (
-		<div className="md:w-1/2 m-auto mt-20 sm:m-auto">
+		<div className="md:w-1/2 m-auto mt-20 sm:m-auto" key={titles[0]}>
 			<div className="text-center font-bold">
 				<span className="text-white text-2xl md:text-4xl">{titles[0]}</span>
 			</div>
@@ -94,7 +94,7 @@ export default function CommitteeBody({
 			{files ? (
 				<div className="grid md:grid-cols-2 gap-4 p-8 md:p-4">
 					{files.map((obj) => (
-						<a href={obj.src} target="_blank">
+						<a href={obj.src} target="_blank" key={obj.title}>
 							<div className="bg-slate-600 w-full h-full text-white p-4 rounded hover:bg-slate-700 transition">
 								<span>{obj.title}</span>
 							</div>
