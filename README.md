@@ -29,7 +29,7 @@ npm run build
 
 This will create the website in the `/out/` directory to be uploaded to UCSD servers.
 
-# Upload the website
+### Upload the website
 
 Using [Cisco AnyConnect](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html), connect to the UCSD VPN (vpn.ucsd.edu).
 
