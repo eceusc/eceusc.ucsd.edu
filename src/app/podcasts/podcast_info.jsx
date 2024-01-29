@@ -1,4 +1,4 @@
-let podcasts = [
+let podcast_info = [
 	{
 		episode: 1,
 		guest: "Arjun Sampath",
@@ -70,4 +70,5 @@ let podcasts = [
 		url: "https://www.youtube.com/embed/7HYP2W2IMIM",
 	},
 ];
-export default podcasts;
+
+export default podcast_info;
