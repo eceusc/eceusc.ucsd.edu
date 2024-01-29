@@ -7,7 +7,7 @@ import members from "../members";
 export default function TeamPage() {
 	return (
 		<>
-			<Navbar pageLocation="Our Team" hideInitialNav={false} />
+			<Navbar pageLocation="Team" hideInitialNav={false} />
 			<Background>
 				<div className="text-center font-bold md:pb-4 mt-20 md:m-auto">
 					<span className="text-white text-2xl md:text-4xl">Meet the Team</span>

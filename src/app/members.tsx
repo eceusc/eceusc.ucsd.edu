@@ -100,11 +100,7 @@ let members = [
 		minor: null,
 		depth: null,
 		lines: ["TBD", "Fun Fact: I ride a motorcycle."],
-<<<<<<< HEAD
-		pic: "/22-23/Kaitlin.jpg",
-=======
-		pic: "../../22-23/Kaitlin.png",
->>>>>>> a7cd53fe107bc364340cb3599f89d0e2ba7a7cfd
+		pic: "/22-23/Kaitlin.png",
 		email: "kcalimbahin@ucsd.edu",
 		year: "Junior",
 	},
