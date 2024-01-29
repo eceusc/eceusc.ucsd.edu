@@ -1,5 +1,6 @@
 import members from "../app/members";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
 
 interface Member {
 	name: string;
@@ -19,9 +20,15 @@ export default function contact_info({ names }: { names: string[] }) {
 					const member: Member =
 						members[members.findIndex((m) => m.name.includes(i))];
 					return (
-						<div className="flex flex-row space-around p-6 bg-slate-700 rounded-lg shadow-sm shadow-slate-800" key={i}>
-							<img
+						<div
+							className="flex flex-row space-around p-6 bg-slate-700 rounded-lg shadow-sm shadow-slate-800"
+							key={i}
+						>
+							<Image
 								src={member.pic}
+								alt={member.name}
+								width={100}
+								height={100}
 								className="rounded-full w-24 mr-5 outline outline-2 outline-offset-4 outline-slate-300"
 							/>
 							<div className="my-auto">

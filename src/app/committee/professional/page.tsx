@@ -1,12 +1,11 @@
-import Layout from "../../layout";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
-import Contact from "../../../components/contact_info";
+import Contact from "@/components/contact_info";
 import { File } from "@/app/types";
 
-export default function Professional() {
+export default function ProfessionalPage() {
 	let titles = ["Professional Events", "Previous Workshop Slides"];
 	let desc = [
 		"The professional committee works to ensure that ECE students are competent in the realm of professional development. While technical skills are important for industry and academia, learning how to network and making a good impression is equally important in advancing one's career. Our events range from workshops and resume reviews to career panels and fairs. In the end, we hope to bridge the gap between students and industry professionals.",
@@ -29,7 +28,7 @@ export default function Professional() {
 	let flyers = ["/committees/professional/ece_rcf_flyer.png"];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -42,6 +41,6 @@ export default function Professional() {
 				<Contact names={["Brandon"]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

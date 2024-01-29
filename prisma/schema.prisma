@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             Int      @id @default(autoincrement())
+  email          String   @unique
+  password       String
+  name           String   @default("New User")
+  role           Int      @default(0)
+  profilePicture String   @default("default.png")
+  createdAt      DateTime @default(now())
+  points         Int      @default(0)
+  eventsAttended Event[]  @relation("EventToUser")
+}
+
+model Event {
+  id            Int       @id @default(autoincrement())
+  name          String?
+  desc          String?
+  date          DateTime?
+  startHour     Int
+  endHour       Int
+  usersAttended User[]    @relation("EventToUser")
+}

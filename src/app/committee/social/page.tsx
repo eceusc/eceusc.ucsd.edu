@@ -1,11 +1,10 @@
-import Layout from "../../layout";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
-import Contact from "../../../components/contact_info";
+import Contact from "@/components/contact_info";
 
-export default function Social() {
+export default function SocialPage() {
 	let titles = ["Social Events"];
 	let desc = [
 		"The Social committee works to ensure that ECE students are rewarded for all their hard work! Through social events and outings, ECE USC’s Social team helps build a community within ECE. Whether it’s meeting new people over boba and ice cream, watching movies off-campus, or hosting a study social before finals - the social committee ensures that you can meet other like minded ECE students, make new friends, and blow off some steam.",
@@ -18,13 +17,13 @@ export default function Social() {
 	];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody titles={titles} desc={desc} images={images} />
 				<Contact names={["Ricky"]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

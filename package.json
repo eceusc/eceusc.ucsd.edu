@@ -18,13 +18,24 @@
     "@fullcalendar/react": "^6.1.9",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@prisma/client": "^5.6.0",
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+<<<<<<< HEAD
+    "gapi-script": "^1.2.0",
     "next": "13.4.7",
+    "next-auth": "^4.24.4",
+    "node-gyp": "^10.0.1",
+=======
+    "next": "^14.0.4",
+>>>>>>> a7cd53fe107bc364340cb3599f89d0e2ba7a7cfd
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -32,5 +43,10 @@
     "react-icons": "^4.10.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.1",
+    "@types/bcryptjs": "^2.4.5",
+    "prisma": "^5.6.0"
   }
 }

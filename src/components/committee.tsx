@@ -37,7 +37,7 @@ export default function Committee() {
 	];
 
 	return (
-		<Container type="2" id="committees">
+		<Container type="2">
 			<span className="flex text-2xl md:text-4xl text-white justify-center p-8 pt-0 font-bold">
 				Our Committees
 			</span>
@@ -52,20 +52,21 @@ export default function Committee() {
 
 function CommitteeItem(name: string, desc: string, redirect: string) {
 	return (
-		<>
-			<div className="grid grid-flow-col grid-cols-8 rounded-lg bg-slate-700 shadow-sm shadow-slate-800">
-				<div className="flex flex-col col-start-1 col-end-8 p-8">
-					<span className="text-2xl text-white font-semibold">{name}</span>
-					<div className="tracking-normal">
-						<span className="text-lg text-white indent-0">{desc}</span>
-					</div>
+		<div
+			key={name}
+			className="grid grid-flow-col grid-cols-8 rounded-lg bg-slate-700 shadow-sm shadow-slate-800"
+		>
+			<div className="flex flex-col col-start-1 col-end-8 p-8">
+				<span className="text-2xl text-white font-semibold">{name}</span>
+				<div className="tracking-normal">
+					<span className="text-lg text-white indent-0">{desc}</span>
 				</div>
-				<Link href={redirect}>
-					<div className="flex flex-col justify-center m-auto col-start-8 rounded-r-lg bg-slate-800 hover:bg-slate-900 hover:shadow-slate-900 shadow-sm shadow-slate-800 h-full transition-all">
-						<FaArrowRight className="text-2xl text-white font-semibold self-center" />
-					</div>
-				</Link>
 			</div>
-		</>
+			<Link href={redirect}>
+				<div className="flex flex-col justify-center m-auto col-start-8 rounded-r-lg bg-slate-800 hover:bg-slate-900 hover:shadow-slate-900 shadow-sm shadow-slate-800 h-full transition-all">
+					<FaArrowRight className="text-2xl text-white font-semibold self-center" />
+				</div>
+			</Link>
+		</div>
 	);
 }

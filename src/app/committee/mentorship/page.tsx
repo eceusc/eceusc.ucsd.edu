@@ -1,11 +1,10 @@
-import Layout from "../../layout";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
-import Contact from "../../../components/contact_info";
+import Contact from "@/components/contact_info";
 
-export default function Mentorship() {
+export default function MentorshipPage() {
 	let titles = ["Mentorship Program"];
 	let desc = [
 		"The Mentorship Program strives to build an inclusive community among ECE Undergraduate students at UC San Diego.",
@@ -31,7 +30,7 @@ export default function Mentorship() {
 	let flyers = ["/committees/mentorship/mentor_recruit_poster.jpg"];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -45,6 +44,6 @@ export default function Mentorship() {
 				<Contact names={["Joshua", ""]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

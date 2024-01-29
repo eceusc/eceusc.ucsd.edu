@@ -1,12 +1,11 @@
-import Layout from "../../layout";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
-import Contact from "../../../components/contact_info";
+import Contact from "@/components/contact_info";
 import { File } from "@/app/types";
 
-export default function Academic() {
+export default function AcademicPage() {
 	let titles = ["Academic Events", "Previous ECE Town Halls"];
 	let desc = [
 		"Our Academic events is the bridge between the ECE department and undergraduate students. Their biggest event is their town hall, where students can provide feedback to ECE department professors, as well as ask any questions they have.",
@@ -25,7 +24,7 @@ export default function Academic() {
 	];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -37,6 +36,6 @@ export default function Academic() {
 				<Contact names={[""]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

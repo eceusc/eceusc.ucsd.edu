@@ -23,7 +23,10 @@ export default function Team({
 	lines: string[];
 }) {
 	return (
-		<div className="flex flex-col text-center bg-slate-800 rounded-lg p-6 m-4 text-white shadow-sm shadow-slate-900">
+		<div
+			className="flex flex-col text-center bg-slate-800 rounded-lg p-6 m-4 text-white shadow-sm shadow-slate-900"
+			key={name}
+		>
 			<div className="m-2">
 				<Image
 					src={pic}
@@ -46,11 +49,11 @@ export default function Team({
 			</div>
 
 			<div className="flex flex-col ">
-				<span>{major} Major</span>
+				<span>{major}</span>
 				<span className="text-sm text-slate-300">
 					{depth ? " w/ depth in " + depth : ""}
 				</span>
-				<span className="text-sm mt-2">{minor ? minor + " Minor" : ""}</span>
+				<span className="text-sm mt-2">{minor ? minor : ""}</span>
 			</div>
 
 			<div className="flex flex-col mt-4">

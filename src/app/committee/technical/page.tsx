@@ -1,12 +1,11 @@
-import Layout from "../../layout";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Background from "@/components/background";
 import CommitteeBody from "@/components/committee_body";
-import Contact from "../../../components/contact_info";
+import Contact from "@/components/contact_info";
 import { File } from "@/app/types";
 
-export default function Social() {
+export default function TechnicalPage() {
 	let titles = ["Technical Events", "Fall 2023 Guided Quarterly Project"];
 	let desc = [
 		"The technical committee works to ensure ECE students have relevant technical skills for industry. While ECE classes may cover academic and theoretical topics, ECE USC’s technical committee emphasizes hands-on learning through fun workshops and quarter long projects. With topics on Arduino and basic circuit building, as well as Python and machine learning, these workshops cover the foundations of what it takes to be an industry-relevant engineer.",
@@ -21,7 +20,7 @@ export default function Social() {
 		"/committees/technical/TechnicalPic2.jpg",
 	];
 	let flyers = ["/committees/technical/2023F_guided_qp.png"];
-	let files = [
+	let files: File[] = [
 		{
 			title: "Tech Demo",
 			src: "https://drive.google.com/file/d/1e4MbFcUu_ifKBuET9UwVkdm_KgyZPs8O/preview",
@@ -29,7 +28,7 @@ export default function Social() {
 	];
 
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Committees" hideInitialNav={false} />
 			<Background>
 				<CommitteeBody
@@ -44,6 +43,6 @@ export default function Social() {
 				<Contact names={["Rana", "Neo"]} />
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

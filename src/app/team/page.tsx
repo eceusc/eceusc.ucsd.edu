@@ -1,4 +1,3 @@
-import Layout from "../layout";
 import Navbar from "@/components/navbar";
 import Background from "@/components/background";
 import Footer from "@/components/footer";
@@ -7,7 +6,7 @@ import members from "../members";
 
 export default function TeamPage() {
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Our Team" hideInitialNav={false} />
 			<Background>
 				<div className="text-center font-bold md:pb-4 mt-20 md:m-auto">
@@ -33,6 +32,6 @@ export default function TeamPage() {
 				</div>
 			</Background>
 			<Footer />
-		</Layout>
+		</>
 	);
 }

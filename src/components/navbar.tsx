@@ -19,8 +19,9 @@ export default function Navbar({
 		["Home", "/"],
 		["Committees", "/#committees"],
 		["Podcasts", "/podcasts"],
-		["Our Team", "/team"], // combine team and join into a section on home page?
+		["Team", "/team"], // combine team and join into a section on home page?
 		["Join", "/join"],
+		["Login", "/login"],
 	];
 
 	useEffect(() => {
@@ -36,49 +37,47 @@ export default function Navbar({
 	}, []);
 
 	return (
-		<>
-			<div
-				className={
-					scrollPosition < 50 && hideInitialNav
-						? "grid grid-cols-2 bg-zinc-900 text-white p-4 z-30 w-full fixed md:flex md:flex-row md:bg-transparent transition"
-						: "grid grid-cols-2 bg-zinc-900 text-white p-4 z-30 w-full fixed md:flex md:flex-row md:shadow-2xl md:shadow-blue-400 transition"
-				}
-			>
-				<div className="">
-					<a href="/">
-						<Image
-							src="/images/logo.svg"
-							width={200}
-							height={65}
-							alt="ECE USC Logo"
-						/>
-					</a>
-				</div>
-				<div className="justify-self-end my-auto">
-					<FaBars
-						id="menu-expand"
-						className={
-							navbarOpen
-								? "text-2xl transition-all rotate-90 md:hidden"
-								: "text-2xl transition-all md:hidden"
-						}
-						onClick={() => setNavbarOpen(!navbarOpen)}
+		<div
+			className={
+				scrollPosition < 50 && hideInitialNav
+					? "grid grid-cols-2 bg-zinc-900 text-white p-4 z-30 w-full fixed md:flex md:flex-row md:bg-transparent transition"
+					: "grid grid-cols-2 bg-zinc-900 text-white p-4 z-30 w-full fixed md:flex md:flex-row md:shadow-lg md:shadow-blue-400 transition"
+			}
+		>
+			<div className="">
+				<a href="/">
+					<Image
+						src="/images/logo.svg"
+						width={200}
+						height={65}
+						alt="ECE USC Logo"
 					/>
-				</div>
-				<div
+				</a>
+			</div>
+			<div className="justify-self-end my-auto">
+				<FaBars
+					id="menu-expand"
 					className={
 						navbarOpen
-							? "col-span-2 flex flex-col transition-all md:block"
-							: "col-span-2 transition-all h-0 hidden md:flex md:h-fit md:ms-auto"
+							? "text-2xl transition-all rotate-90 md:hidden"
+							: "text-2xl transition-all md:hidden"
 					}
-					id="menu-items"
-				>
-					{navbarItems.map(([itemName, itemLink]) =>
-						Navitem([itemName, itemLink], pageLocation)
-					)}
-				</div>
+					onClick={() => setNavbarOpen(!navbarOpen)}
+				/>
 			</div>
-		</>
+			<div
+				className={
+					navbarOpen
+						? "col-span-2 flex flex-col transition-all md:block"
+						: "col-span-2 transition-all h-0 hidden md:flex md:h-fit md:ms-auto"
+				}
+				id="menu-items"
+			>
+				{navbarItems.map(([itemName, itemLink]) =>
+					Navitem([itemName, itemLink], pageLocation)
+				)}
+			</div>
+		</div>
 	);
 }
 

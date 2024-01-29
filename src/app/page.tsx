@@ -8,7 +8,7 @@ import AboutUs from "../components/about";
 
 export default function Home() {
 	return (
-		<Layout>
+		<>
 			<Navbar pageLocation="Home" hideInitialNav={true} />
 			<Hero
 				title="ECE Undergraduate Student Council"
@@ -32,8 +32,10 @@ export default function Home() {
 				</picture>
 			</div>
 			<AboutUs />
+			<div id="committees" className="absolute -mt-20"></div>{" "}
+			{/* Without this^ line, the committees navbar item scrolls too far */}
 			<Committee />
 			<Footer />
-		</Layout>
+		</>
 	);
 }
