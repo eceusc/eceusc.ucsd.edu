@@ -21,7 +21,7 @@ let members = [
 		lines: [
 			"I used to play archery for my state",
 		],
-		pic: "/24-25/yongQuanNeo",
+		pic: "/24-25/yongQuanNeo.jpeg",
 		email: "yneo@ucsd.edu",
 		year: "Third Year",
 	},
@@ -47,7 +47,7 @@ let members = [
 		lines: [
 			"I'm not a fan of cilantro",
 		],
-		pic: "/24-25/irisChou.png",
+		pic: "/24-25/irisChou.jpg",
 		email: "irchou@ucsd.edu",
 		year: "Second Year",
 	},
@@ -61,7 +61,7 @@ let members = [
 		lines: [
 			"I do kpop dance covers",
 		],
-		pic: "/24-25/alexandraDinh.png",
+		pic: "/24-25/alexandraDinh.jpeg",
 		email: "ald012@ucsd.edu",
 		year: "Second Year",
 	},
@@ -74,7 +74,7 @@ let members = [
 		lines: [
 			"I've traveled to 17 countries and 4 continents"
 		],
-		pic: "/24-25/jadenSeangmany.png",
+		pic: "/24-25/jadenSeangmany.jpeg",
 		email: "jseangmany@ucsd.edu",
 		year: "Second Year",
 	},
@@ -88,7 +88,7 @@ let members = [
 			"I’ve dislocated both my thumbs and both my knees before."
 ,
 		],
-		pic: "/24-25/stevenChen.png",
+		pic: "/24-25/stevenChen.jpeg",
 		email: "stc008@ucsd.edu",
 		year: "Third Year",
 	},

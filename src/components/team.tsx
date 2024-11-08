@@ -57,7 +57,7 @@ export default function Team({
 			</div>
 
 			<div className="flex flex-col mt-4">
-				<span className="text-sm">{lines[2] ? lines[2] : lines[1]}</span>
+				<span className="text-sm">{lines[0] ? `Fun fact: ${lines[0]}` : ""}</span>
 			</div>
 		</div>
 	);
