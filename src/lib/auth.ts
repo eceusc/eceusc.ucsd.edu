@@ -22,26 +22,21 @@ export const authConfig: NextAuthOptions = {
 			},
 
 			async authorize(credentials) {
-				if (!credentials || !credentials.email || !credentials.password)
-					return null;
+				if (!credentials || !credentials.email || !credentials.password) return null;
 
 				const dbUser = await prisma.user.findFirst({
 					where: { email: credentials.email },
 				});
 
 				if (dbUser) {
-					bcrypt
-						.compare(credentials.password, dbUser.password)
-						.then(function (result: boolean) {
-							if (result) {
-								const { password, createdAt, id, ...dbUserWithoutPassword } =
-									dbUser;
-
-								console.log(dbUserWithoutPassword);
-								console.log(dbUser);
-								return dbUserWithoutPassword;
-							}
-						});
+					const result = await bcrypt.compare(credentials.password, dbUser.password);
+					if (result) {
+						const { password, createdAt, ...dbUserWithoutPassword } = dbUser;
+						return {
+							...dbUserWithoutPassword,
+							id: dbUser.id.toString(), // Convert `id` to string
+						};
+					}
 				}
 
 				return null;
@@ -59,9 +54,7 @@ export async function loginIsRequiredServer() {
 	if (!session) return redirect("/");
 }
 
-export function loginIsRequiredClient() {
-	if (typeof window !== "undefined") {
-		const session = useSession();
-		if (!session) redirect("/");
-	}
+export function useLoginIsRequiredClient() {
+	const { data: session } = useSession();
+	if (!session && typeof window !== "undefined") redirect("/");
 }

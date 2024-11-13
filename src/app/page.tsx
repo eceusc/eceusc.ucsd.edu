@@ -3,7 +3,7 @@ import Layout from "./layout";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
-import Committee from "../components/committee";
+//import Committee from "../components/committee";
 import AboutUs from "../components/about";
 import UpcomingEvents from "../components/upcomingEvents";
 
@@ -36,7 +36,7 @@ export default function Home() {
 			<AboutUs />
 			<div id="committees" className="absolute -mt-20"></div>{" "}
 			{/* Without this^ line, the committees navbar item scrolls too far */}
-			<Committee />
+			{/*<Committee />*/}
 			<Footer />
 		</>
 	);

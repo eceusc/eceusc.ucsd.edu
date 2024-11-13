@@ -72,7 +72,7 @@ let members = [
 		minor: "Cognitive Science, Math",
 		depth: "Machine Learning and Data Science",
 		lines: [
-			"I've traveled to 17 countries and 4 continents"
+			"I've traveled to 17 countries and 4 continents",
 		],
 		pic: "/24-25/jadenSeangmany.jpg",
 		email: "jseangmany@ucsd.edu",
@@ -85,8 +85,7 @@ let members = [
 		minor: null,
 		depth: null, //must ask
 		lines: [
-			"I’ve dislocated both my thumbs and both my knees before."
-,
+			"I've dislocated both my thumbs and both my knees before.",
 		],
 		pic: "/24-25/stevenChen.jpg",
 		email: "stc008@ucsd.edu",
