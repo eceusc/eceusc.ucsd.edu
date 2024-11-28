@@ -11,7 +11,7 @@ export default function UpcomingEvents() {
                 {/* Flyer Image */}
                 <div className="mb-4">
                     <Image
-                        src="/images/eceFemaleProfPanel.png" 
+                        src="images/fontimg.png" // place image here when needed
                         alt="Flyer for AMA"
                         width={800} 
                         height={600} 

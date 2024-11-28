@@ -27,15 +27,18 @@ export default function Team({
 			className="flex flex-col text-center bg-slate-800 rounded-lg p-6 m-4 text-white shadow-sm shadow-slate-900"
 			key={name}
 		>
-			<div className="m-2">
-				<Image
-					src={pic}
-					alt={name}
-					width={100}
-					height={100}
-					className="rounded-full outline outline-2 outline-offset-4 outline-slate-700 hover:outline-slate-300 transition-all m-auto"
-				/>
-			</div>
+			<div
+			className="relative w-[100px] h-[100px] rounded-full overflow-hidden outline outline-2 outline-offset-4 outline-slate-700 hover:outline-slate-300 transition-all m-auto"
+		>
+			<Image
+				src={pic}
+				alt={name}
+				width={100}
+				height={100}
+				className="object-cover w-full h-full"
+			/>
+		</div>
+
 
 			<div className="m-2 flex flex-col items-center">
 				<span className="text-lg">{name}</span>

@@ -21,7 +21,7 @@ export default function Navbar({
 		["Podcasts", "/podcasts"],
 		["Team", "/team"], // combine team and join into a section on home page?
 		["Join", "/join"],
-		["Login", "/login"],
+		// ["Login", "/login"],
 	];
 
 	useEffect(() => {
