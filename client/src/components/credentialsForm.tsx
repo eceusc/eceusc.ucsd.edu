@@ -44,27 +44,15 @@ export function CredentialsForm(props: CredentialsFormProps) {
 	};
 
 	return (
-		<form className="w-full bg-zinc-700 rounded-sm" onSubmit={handleSubmit}>
-			<div className="flex flex-col-reverse sm:flex-row pt-6">
-				<label htmlFor="email" className="block sm:inline-block text-2xl pr-6">
-					Email
-				</label>
-				{error && (
-					<span className="text-red-400 text-center sm:text-left sm:text-2xl rounded-t-sm">
-						{error}
-					</span>
-				)}
-			</div>
+		<form className="w-full bg-blue rounded-sm" onSubmit={handleSubmit}>
+			
 			<input
 				type="email"
 				name="email"
-				placeholder="Email"
+				placeholder="Email (user@ucsd.edu)"
 				required
 				className="p-4 my-2 rounded-md w-full text-zinc-900"
 			/>
-			<label htmlFor="password" className="block text-2xl">
-				Password
-			</label>
 			<input
 				type="password"
 				name="password"
@@ -74,7 +62,7 @@ export function CredentialsForm(props: CredentialsFormProps) {
 			/>
 			<button
 				type="submit"
-				className="block bg-zinc-50 p-4 mt-4 rounded-sm m-auto text-zinc-900 font-semibold hover:bg-blue-400 hover:shadow-2xl shadow-blue-400 hover:text-white transition"
+				className="block bg-zinc-50 p-4 mt-4 rounded-lg m-auto text-zinc-900 font-semibold hover:bg-blue-400 hover:shadow-2xl shadow-blue-400 hover:text-white transition"
 			>
 				{props.buttonText}
 			</button>

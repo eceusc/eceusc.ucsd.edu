@@ -8,10 +8,28 @@ import { FaBars } from "react-icons/fa";
 export default function Navbar({
 	pageLocation,
 	hideInitialNav,
+	onlyLogo = false, // New prop to toggle the minimal navbar
 }: {
 	pageLocation: string;
 	hideInitialNav: boolean;
+	onlyLogo?: boolean; // New prop
 }) {
+	// Check if the navbar should only show the logo
+	if (onlyLogo) {
+		return (
+			<div className="bg-transparent text-white p-4 z-30 w-full fixed flex justify-center">
+				<a href="/">
+					<Image
+						src="/images/logoDark.svg"
+						width={200}
+						height={65}
+						alt="ECE USC Logo"
+					/>
+				</a>
+			</div>
+		);
+	}
+
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [navbarOpen, setNavbarOpen] = useState(false);
 
