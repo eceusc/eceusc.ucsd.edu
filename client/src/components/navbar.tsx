@@ -9,18 +9,36 @@ export default function Navbar({
 	pageLocation,
 	hideInitialNav,
 	onlyLogo = false, // New prop to toggle the minimal navbar
+	onlyLogoLight = false,
 }: {
 	pageLocation: string;
 	hideInitialNav: boolean;
 	onlyLogo?: boolean; // New prop
+	onlyLogoLight?: boolean; // For the signup page
 }) {
 	// Check if the navbar should only show the logo
 	if (onlyLogo) {
 		return (
-			<div className="bg-transparent text-white p-4 z-30 w-full fixed flex justify-center">
+			<div className="bg-transparent text-white p-4 z-30 w-full fixed flex justify-left">
 				<a href="/">
 					<Image
 						src="/images/logoDark.svg"
+						width={200}
+						height={65}
+						alt="ECE USC Logo"
+					/>
+				</a>
+			</div>
+		);
+	}
+
+	// Check if we're using light logo (for the signup page)
+	if (onlyLogoLight) {
+		return (
+			<div className="bg-transparent text-white p-4 z-30 w-full fixed flex justify-left">
+				<a href="/">
+					<Image
+						src="/images/logo.svg"
 						width={200}
 						height={65}
 						alt="ECE USC Logo"
