@@ -6,6 +6,10 @@ import { redirect } from "next/navigation";
 import { useState } from "react";
 import { signup } from "@/utils/login-utils";
 import { UserInfo } from "@/app/types";
+import { Listbox, ListboxButton, ListboxOption, ListboxOptions, ListboxSelectedOption } from '@headlessui/react'
+import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
+import clsx from 'clsx'
+import { majors } from "@/app/constants";
 import "../app/signup/styles.css"
 
 interface CredentialsFormProps {
@@ -109,14 +113,16 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 				className="p-4 my-2 rounded-md w-full text-white focus"
 				style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
 			/>
-				<input
+				{/* <input
 				type="major" // what should this type be?
 				name="major"
 				placeholder="Major (Philosophical Engineering)"
 				required
 				className="p-4 my-2 rounded-md w-full text-white focus"
 				style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
-			/>
+			/> */}
+
+                <MajorsList/>
 				{/*
 				<input 
 
@@ -142,4 +148,46 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 			</button>
 		</form>
 	);
+}
+
+function MajorsList(){
+    const [selectedMajor, setSelectedMajor] = useState<any>("Major");
+
+    return (
+        <div>
+        <Listbox value={selectedMajor} onChange={setSelectedMajor} name="major">
+            <ListboxButton 
+                className="p-4 my-2 rounded-md w-full text-white/60 focus" 
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', textAlign:'left' }}
+                >
+                    <div className="flex">
+                        {selectedMajor}
+                        <ChevronDownIcon
+                            className=" ml-auto w-6 h-6 group pointer-events-none top-2.5 right-2.5 fill-white/60"
+                            aria-hidden="true"
+                            />
+                    </div>
+                </ListboxButton>
+            <ListboxOptions 
+                anchor="bottom"
+                transition
+                className={clsx(
+                'w-[var(--button-width)] rounded-xl border border-white/100 bg-black/100 p-1 [--anchor-gap:var(--spacing-1)] focus:outline-none',
+                'transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0'
+                )}
+            >
+                {majors.map((major,index) => (
+                    <ListboxOption 
+                        key={index} 
+                        value={major} 
+                        className="group flex text-white/60 cursor-default items-center gap-2 rounded-lg py-1.5 px-3 select-none data-[focus]:bg-white/10 "
+                    >
+                        <CheckIcon className="invisible w-6 h-6 size-1 fill-white/60 group-data-[selected]:visible" />
+                        {major}
+                    </ListboxOption>
+                ))}
+            </ListboxOptions>
+        </Listbox>
+        </div>
+    );
 }
