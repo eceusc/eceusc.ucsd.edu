@@ -4,8 +4,8 @@ import prisma from "@/lib/prisma";
 import { signIn } from "next-auth/react";
 import { redirect } from "next/navigation";
 import { useState } from "react";
-import bcrypt from "bcryptjs";
-import { loginAuthentication, signup } from "@/utils/login-utils";
+import { signup } from "@/utils/login-utils";
+import { UserInfo } from "@/app/types";
 import "../app/signup/styles.css"
 
 interface CredentialsFormProps {
@@ -44,27 +44,30 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 		// 	setError("Your email or password was incorrect.");
 		// }
 
-        const email = data.get("email") as String;
-        const password = data.get("password") as String;
-        if(props.buttonText==='Sign up'){
-            const response: any = await signup(email,password);
+        const email = data.get("email") as string;
+        const password = data.get("password") as string;
+        const first_name = data.get("first name") as string;
+        const last_name = data.get("last name") as string;
+        const major = data.get("major") as string;
+        const confirm_password = data.get("confirm password") as string;
+        // Do something when password and confirm_password do not match.
+        // Can have a function that deals with this and shows appropraite message.
+        // LETS HAVE A STATE MESSAGE THAT IS EMPTY STRING INITIALLY AND SHOWS THE MESSAGE TO USER IN VARIOUS SCENARIOS SUCH AS 'PASSWORDS DONT MATCH', ETC
+        const userData: UserInfo = {email:email,password:password,first_name:first_name,last_name:last_name,major:major};
+
+        
+            const response: any = await signup(userData);
             if(response.status !== 200){// Response not Okay so the status is 401
                 setError(response.message);
             }
             // TASK: DO SOMETHING ON SUCCESSFUL SIGNUP
-        } else{
-            const response: any = await loginAuthentication(email,password);
-            if(response.status !== 200){// Response not Okay so the status is 401
-                setError(response.message);
-            }
-            // TASK: DO SOMETHING ON SUCCESSFUL LOGIN
-        }
+        
 	};
 
 	return (
 		<form className="w-full bg-blue rounded-sm" onSubmit={handleSubmit}>
 			<input
-				type="name" // should these just be names?
+				type="name" // should these just be names? ANS: "text" should be fine
 				name="first name"
 				placeholder="First Name"
 				required

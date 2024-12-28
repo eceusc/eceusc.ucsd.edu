@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { UserInfo } from '@/app/types';
 
 
 const SERVER_URL = "http://localhost:8080";
@@ -24,16 +25,15 @@ export async function loginAuthentication(email: String, password: String): Prom
  * @param password - Password submitted by the user
  * @returns 
  */
-export async function signup(email: String, password: String): Promise<{ status: number; message: string }>{
+export async function signup(userData: UserInfo): Promise<{ status: number; message: string }>{
     try{
-        const data = {email, password};
-        console.log(`Signup function called with ${data}`)
+        console.log(`Signup function called with ${userData}`)
         const response: Response = await fetch(`${SERVER_URL}/auth/signup`,{
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(userData)
         });
         const responseData = await response.json();
         return {

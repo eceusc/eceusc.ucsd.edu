@@ -1,24 +1,28 @@
 import express, {Request, Response} from 'express';
 import bcrypt from "bcryptjs";
 import User from '../models/Users';
+import { UserInfo } from '../types/types';
 
 const router = express.Router();
 
 router.put("/signup",async(req: Request,res: Response)=>{
-    const {email,password} = req.body;
-    console.log(`Request received with email:${email} and password:${password}`);
+    const userData : UserInfo = req.body;
+    console.log(`Request received with userData:${userData}`);
     try{
         // Check if account already exists.
-        const user = await User.findOne({emailId: email});
+        const user = await User.findOne({emailId: userData.email});
         if (user) {
             return res.status(400).json({ message: "Email has already been taken" });
         }
         
         // Create a new user 
-        const hashedPassword = await bcrypt.hash(password,10); // Salting and Hashing password
+        const hashedPassword = await bcrypt.hash(userData.password,10); // Salting and Hashing password
         const newUser = new User({
-            emailId: email,
-            password: hashedPassword
+            emailId: userData.email,
+            password: hashedPassword,
+            first_name: userData.first_name,
+            last_name: userData.last_name,
+            major: userData.major
         })
         await newUser.save();
     } catch(err){
