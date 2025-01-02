@@ -146,10 +146,18 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 			>
 				{props.buttonText}
 			</button>
+            
+            <div>
+                {error}
+            </div>
 		</form>
 	);
 }
 
+/**
+ * 
+ * @returns - List of majors in a box
+ */
 function MajorsList(){
     const [selectedMajor, setSelectedMajor] = useState<any>("Major");
 

@@ -9,13 +9,28 @@ const SERVER_URL = "http://localhost:8080";
  * @param email - Email ID submitted by the user
  * @param password - Password submitted by the user
  */
-export async function loginAuthentication(email: String, password: String): Promise<any>{
+export async function loginAuthentication(email: String, password: String): Promise<{ status: number; message: string }>{
     try{
         const data = {email, password};
-        const response = await axios.post(`${SERVER_URL}/auth/login`,data);
-        return response.data;
+        // const response = await axios.post(`${SERVER_URL}/auth/login`,data);
+        const response = await fetch(`${SERVER_URL}/auth/login`,{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data)
+        });
+        const responseData = await response.json();
+        return {
+            status: response.status,
+            message: responseData.message || ""
+        };
     } catch(err: any){
         console.log(`Error in loginAuthentication: ${err}`);
+        return {
+            status: 500,
+            message: "Network error or server unreachable",
+        };
     }
 }
 
