@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 import { useState } from "react";
 import { signup } from "@/utils/login-utils";
 import { UserInfo } from "@/app/types";
-import { Listbox, ListboxButton, ListboxOption, ListboxOptions, ListboxSelectedOption } from '@headlessui/react'
+import { Listbox, ListboxButton, ListboxOption, ListboxOptions, ListboxSelectedOption, Input } from '@headlessui/react'
 import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import clsx from 'clsx'
 import { majors } from "@/app/constants";
@@ -70,23 +70,25 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 
 	return (
 		<form className="w-full bg-blue rounded-sm" onSubmit={handleSubmit}>
-			<input
-				type="name" // should these just be names? ANS: "text" should be fine
-				name="first name"
-				placeholder="First Name"
-				required
-				className="p-4 my-2 rounded-md w-full text-white focus"
-				style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
-			/>
-			<input
-				type="name"
-				name="last name"
-				placeholder="Last Name"
-				required
-				className="p-4 my-2 rounded-md w-full text-white focus"
-				style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
-			/>
-			<input
+            <div className="flex">
+                <Input
+                    type="name" // should these just be names? ANS: "text" should be fine
+                    name="first name"
+                    placeholder="First Name"
+                    required
+                    className="p-4 my-2 rounded-md w-full text-white focus"
+                    style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
+                />
+                <Input
+                    type="name"
+                    name="last name"
+                    placeholder="Last Name"
+                    required
+                    className="p-4 my-2 rounded-md w-full text-white focus"
+                    style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
+                />
+            </div>
+			<Input
 				type="email"
 				name="email"
 				placeholder="Email (user@ucsd.edu)"
@@ -97,7 +99,9 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 					
 				  }}
 			/>
-			<input
+
+            <MajorsList/>
+			<Input
 				type="password"
 				name="password"
 				placeholder="Password"
@@ -105,7 +109,7 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 				className="p-4 my-2 rounded-md w-full text-white focus"
 				style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
 			/>
-			<input
+			<Input
 				type="password"
 				name="confirm password"
 				placeholder="Confirm Password"
@@ -113,7 +117,7 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 				className="p-4 my-2 rounded-md w-full text-white focus"
 				style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
 			/>
-				{/* <input
+				{/* <Input
 				type="major" // what should this type be?
 				name="major"
 				placeholder="Major (Philosophical Engineering)"
@@ -121,10 +125,9 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 				className="p-4 my-2 rounded-md w-full text-white focus"
 				style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
 			/> */}
-
-                <MajorsList/>
+                
 				{/*
-				<input 
+				<Input 
 
 				//**FIGURE OUT HOW TO FIX**
 				//If this is here, it becomes too long and the page looks broken.
@@ -146,7 +149,7 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
 			>
 				{props.buttonText}
 			</button>
-            
+
             <div>
                 {error}
             </div>
@@ -177,7 +180,7 @@ function MajorsList(){
                     </div>
                 </ListboxButton>
             <ListboxOptions 
-                anchor="bottom"
+                anchor={'bottom'}
                 transition
                 className={clsx(
                 'w-[var(--button-width)] rounded-xl border border-white/100 bg-black/100 p-1 [--anchor-gap:var(--spacing-1)] focus:outline-none',
