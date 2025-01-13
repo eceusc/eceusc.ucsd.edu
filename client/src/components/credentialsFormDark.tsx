@@ -11,6 +11,7 @@ import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import clsx from 'clsx'
 import { majors } from "@/app/constants";
 import "../app/signup/styles.css"
+import { Combobox, ComboboxInput, ComboboxOption, ComboboxOptions } from '@headlessui/react'
 
 interface CredentialsFormProps {
 	csrfToken?: string;
@@ -162,9 +163,41 @@ export function CredentialsFormDark(props: CredentialsFormProps) {
  * @returns - List of majors in a box
  */
 function MajorsList(){
-    const [selectedMajor, setSelectedMajor] = useState<any>("Major");
+	const [selectedMajor, setSelectedMajor] = useState(majors[0])
+	const [query, setQuery] = useState('')
+  
+	const filteredMajors =
+	  query === ''
+		? majors
+		: majors.filter((Major) => {
+			return Major.toLowerCase().includes(query.toLowerCase())
+		  })
 
-    return (
+	return (
+		<Combobox value={selectedMajor} onChange={setSelectedMajor} onClose={() => setQuery('')}>
+		  <ComboboxInput
+		    className="p-4 my-2 rounded-md w-full text-white focus"
+		    style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }} 
+			placeholder="Major"
+			displayValue={(Major) => Major}
+			onChange={(event) => setQuery(event.target.value)}
+		  />
+		  <ComboboxOptions
+		   anchor="bottom" 
+		   className="text-white empty:invisible"
+		   style={{ backgroundColor: 'rgba(0,0,0,0.75'}}>
+
+			{filteredMajors.map((Major, index) => (
+			  <ComboboxOption key={index} value={Major} className="data-[focus]:bg-blue-100"> {/* fix this for the color to actually work */}
+				{Major}
+			  </ComboboxOption>
+			))}
+		  </ComboboxOptions>
+		</Combobox>
+	  )
+	}
+    /* 
+	return (
         <div>
         <Listbox value={selectedMajor} onChange={setSelectedMajor} name="major">
             <ListboxButton 
@@ -200,5 +233,8 @@ function MajorsList(){
             </ListboxOptions>
         </Listbox>
         </div>
+		
     );
+	
 }
+	*/

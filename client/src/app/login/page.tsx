@@ -53,7 +53,7 @@ export default async function LoginPage() {
 
   return (
     <>
-      {/* Render the navbar with only the logo */}
+      {/* Render the navbar with only the logo (remove later if we want full navbar?) */}
       <Navbar onlyLogo />
 
       {/* Layer 1: Full-page background */}
