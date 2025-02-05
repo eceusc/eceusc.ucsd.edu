@@ -34,7 +34,7 @@ let members = [
 		lines: [
 			"I play badminton",
 		],
-		pic: "/24-25/praneethSurapaneni.jpg",
+		pic: "/24-25/praneethSurapaneni.jpeg",
 		email: "psurapaneni@ucsd.edu",
 		year: "Third Year",
 	},
