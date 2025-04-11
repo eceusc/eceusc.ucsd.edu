@@ -13,15 +13,15 @@ export default function UpcomingEvents() {
           <Image
             src="images/ECEDay25Front.jpg" // place image here when needed
             alt="Flyer for ECE Day"
-            width={800}
-            height={600}
+            width={400}
+            height={300}
             className="rounded-sm"
           />
           <Image
             src="images/ECEDay25Back.jpg" // place image here when needed
             alt="Flyer for ECE Day"
-            width={800}
-            height={600}
+            width={400}
+            height={300}
             className="rounded-sm"
           />
         </div>
