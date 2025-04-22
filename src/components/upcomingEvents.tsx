@@ -11,13 +11,6 @@ export default function UpcomingEvents() {
         {/* Flyer Image */}
         <div className="mb-4">
           <Image
-            src="images/sp25mentor.png" // place image here when needed
-            alt="Flyer for ECE Day"
-            width={400}
-            height={300}
-            className="rounded-sm"
-          />
-          <Image
             src="images/industryqa.png" // place image here when needed
             alt="Flyer for ECE Day"
             width={400}
