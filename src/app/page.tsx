@@ -13,7 +13,7 @@ export default function Home() {
 			<Navbar pageLocation="Home" hideInitialNav={true} />
 			<Hero
 				title="ECE Undergraduate Student Council"
-				body="Representing all ECE Undergraduates at UCSD"
+				body="Representing the community of ECE students at UC San Diego"
 			/>
 			<div className="bg-cover bg-center pointer-events-none	select-none">
 				<picture>
