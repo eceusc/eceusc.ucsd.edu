@@ -8,10 +8,9 @@ export default function UpcomingEvents() {
         Upcoming Events
       </span>
       <div className="flex flex-col items-center text-white p-4">
-        {/* Flyer Image */}
         <div className="mb-4">
           <Image
-            src="images/fall_opener_ad.png" // place image here when needed
+            src="/images/fall_opener_ad.png"
             alt="Fall opener flyer"
             width={800}
             height={600}
