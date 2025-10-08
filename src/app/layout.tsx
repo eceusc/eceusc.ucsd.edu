@@ -1,6 +1,9 @@
 import "./globals.css";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { NextAuthProvider } from "./providers";
+import { ThemeProvider } from '@mui/material/styles';
+import theme from "@/theme";
+
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto_Mono({ subsets: ["latin"] });
@@ -18,7 +21,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<NextAuthProvider>{children}</NextAuthProvider>
+                <ThemeProvider theme = {theme}>
+                    <NextAuthProvider>{children}</NextAuthProvider>
+                </ThemeProvider>
 			</body>
 		</html>
 	);

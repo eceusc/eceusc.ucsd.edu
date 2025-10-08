@@ -1,3 +1,14 @@
+import allie_dinh_img from '@/../public/25-26/allie_dinh.jpg';
+import praneeth_surapaneni_img from '@/../public/25-26/praneeth_surapaneni.jpg';
+import jaden_seangmany_img from '@/../public/25-26/jaden_seangmany.jpg';
+import aaditya_pillai_img from '@/../public/25-26/aaditya_pillai.jpg';
+import arnav_sahu_img from '@/../public/25-26/arnav_sahu.jpg';
+import riya_bhatia_img from '@/../public/25-26/riya_bhatia.jpg';
+import emilia_jin_img from '@/../public/25-26/emilia_jin.jpg';
+import helena_phamova_img from '@/../public/25-26/helena_phamova.jpg';
+import hlwan_paing_img from '@/../public/25-26/hlwan_paing.jpg';
+import jasper_huang_img from '@/../public/25-26/jasper_huang.jpg';
+
 let members = [
 	{
 		// This object is a rebound for components/contact_info.tsx
@@ -13,34 +24,34 @@ let members = [
 		year: "",
 	},
 	{
-		name: "Yong Quan Neo",
+		name: "Allie Dinh",
 		position: "President",
 		major: "Electrical Engineering",
 		minor: null,
-		depth: "Computer System Design",
+		depth: null,
 		lines: [
-			"I used to play archery for my state",
+			"I do kpop dance covers",
 		],
-		pic: "/24-25/yongQuanNeo.jpeg",
-		email: "yneo@ucsd.edu",
+		pic: allie_dinh_img.src,
+		email: "ald012@ucsd.edu",
 		year: "Third Year",
 	},
 	{
 		name: "Praneeth Surapaneni",
-		position: "VP Internal",
+		position: "VP External",
 		major: "Computer Engineering",
 		minor: null,
 		depth: null,
 		lines: [
-			"I play badminton",
+			"I can solve a Rubik's cube",
 		],
-		pic: "/24-25/praneethSurapaneni.jpeg",
+		pic: praneeth_surapaneni_img.src,
 		email: "psurapaneni@ucsd.edu",
-		year: "Third Year",
+		year: "Fourth Year",
 	},
 	{
 		name: "Iris Chou",
-		position: "Academic & Professional Chair",
+		position: "VP Events",
 		major: "Computer Engineering",
 		minor: null,
 		depth: null,
@@ -49,47 +60,116 @@ let members = [
 		],
 		pic: "/24-25/irisChou.jpg",
 		email: "irchou@ucsd.edu",
-		year: "Second Year",
+		year: "Third Year",
 	},
 
+    {
+        name: "Jaden Seangmany",
+        position: "VP Internal",
+        major: "Computer Engineering",
+        minor: "Cognitive Science, Math",
+        depth: "Machine Learning and Data Science",
+        lines: [
+            "I've traveled to 17 countries and 4 continents"
+        ],
+        pic: jaden_seangmany_img.src,
+        email: "jseangmany@ucsd.edu",
+        year: "Third Year",
+    },
 	{
-		name: "Alexandra Dinh",
-		position: "Social & WECE Chair",
+		name: "Emilia Jin",
+		position: "WECE Chair",
 		major: "Electrical Engineering",
 		minor: null,
 		depth: null,
 		lines: [
-			"I do kpop dance covers",
+			"I can do a one handed cartwheel!",
 		],
-		pic: "/24-25/alexandraDinh.jpeg",
-		email: "ald012@ucsd.edu",
+		pic: emilia_jin_img.src,
+		email: "e3jin@ucsd.edu",
 		year: "Second Year",
 	},
 	{
-		name: "Jaden Seangmany",
-		position: "Webmaster",
-		major: "Computer Engineering",
-		minor: "Cognitive Science, Math",
-		depth: "Machine Learning and Data Science",
+		name: "Arnav Sahu",
+		position: "Marketing Chair",
+		major: "Electrical Engineering",
+		minor: null,
+		depth: null, //must ask
 		lines: [
-			"I've traveled to 17 countries and 4 continents"
+			"I pack my camera before my clothes on every trip."
+,
 		],
-		pic: "/24-25/jadenSeangmany.jpeg",
-		email: "jseangmany@ucsd.edu",
+		pic: arnav_sahu_img.src,
+		email: "asahu@ucsd.edu",
+		year: "Third Year",
+	},
+	{
+		name: "Aaditya Pillai",
+		position: "Professional Chair",
+		major: "Electrical Engineering",
+		minor: null,
+		depth: null, //must ask
+		lines: [
+			"I’m a diehard Warriors fan"
+,
+		],
+		pic: aaditya_pillai_img.src,
+		email: "a2pillai@ucsd.edu",
 		year: "Second Year",
 	},
 	{
-		name: "Steven Chen",
+		name: "Hlwan Paing",
+		position: "Academic Chair",
+		major: "Electrical Engineering",
+		minor: null,
+		depth: null, //must ask
+		lines: [
+			""
+		],
+		pic: hlwan_paing_img.src,
+		email: "hpaing@ucsd.edu",
+		year: "Fourth Year",
+	},
+	{
+		name: "Helena Phamova",
+		position: "Social Chair",
+		major: "Computer Engineering",
+		minor: null,
+		depth: null, //must ask
+		lines: [
+			"I will always go out of my way to make pasta from scratch"
+,
+		],
+		pic: helena_phamova_img.src,
+		email: "hphamova@ucsd.edu",
+		year: "Fourth Year",
+	},
+	{
+		name: "Riya Bhatia",
 		position: "Mentorship Chair",
 		major: "Electrical Engineering",
 		minor: null,
 		depth: null, //must ask
 		lines: [
-			"I’ve dislocated both my thumbs and both my knees before."
+			"I love playing tennis and pickleball!"
 ,
 		],
-		pic: "/24-25/stevenChen.jpeg",
-		email: "stc008@ucsd.edu",
+		pic: riya_bhatia_img.src,
+		email: "r3bhatia@ucsd.edu",
+		year: "Second Year",
+	},
+	{
+		name: "Jasper Huang",
+		position: "Webmaster ",
+		major: "Computer Engineering",
+		minor: null,
+		depth: null, //must ask
+		lines: [
+			"I can speak 5 languages!"
+,
+		],
+		pic: jasper_huang_img.src,
+		email: "yih085@ucsd.edu",
 		year: "Third Year",
 	},
 ];

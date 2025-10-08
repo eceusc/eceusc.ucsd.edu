@@ -3,10 +3,13 @@ export type File = {
 	src: string;
 };
 
-export type Event = {
-	name: string;
-	desc: string;
-	date: Date;
-	startHour: number;
-	endHour: number;
-};
+export interface Event {
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  information: string;
+  tag: 'professional' | 'academic' | 'wece' | 'social' | 'mentorship';
+  rsvpLink: string;
+  coverImage?: string; // Optional - will use default based on tag if not provided
+}
