@@ -9,7 +9,9 @@ import helena_phamova_img from '@/../public/25-26/helena_phamova.jpg';
 import hlwan_paing_img from '@/../public/25-26/hlwan_paing.jpg';
 import jasper_huang_img from '@/../public/25-26/jasper_huang.jpg';
 
-let members = [
+import { Member } from './types';
+
+let members : Member[] = [
 	{
 		// This object is a rebound for components/contact_info.tsx
 		// when empty args are provided.

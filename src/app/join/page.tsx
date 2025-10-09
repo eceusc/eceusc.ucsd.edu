@@ -31,7 +31,7 @@ export default function JoinPage() {
             />
             <div className="grid grid-rows-2 grid-flow-col">
               <a
-                href="https://www.instagram.com/eceusc_ucsd/"
+                href="https://www.instagram.com/eceusc_at_ucsd/"
                 target="_blank"
                 className="flex flex-row my-auto"
               >

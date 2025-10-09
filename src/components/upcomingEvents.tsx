@@ -29,7 +29,7 @@ const eventsList : Event[] = [
       location: 'Henry Booker Room, Jacobs Hall 2nd Floor',
       information: 'Learn about our mentorship program and how to sign up. Connect with upperclassmen and industry professionals.',
       tag: 'mentorship',
-      rsvpLink: 'https://forms.google.com/example2',
+      rsvpLink: 'https://forms.gle/z46LogsRaJqB6YfE8',
     },
     {
       title: 'Power Engineering Connect',

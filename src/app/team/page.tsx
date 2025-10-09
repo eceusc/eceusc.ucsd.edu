@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar";
 import Background from "@/components/background";
 import Footer from "@/components/footer";
-import Team from "@/components/team";
+import TeamMemberCard from "@/components/team";
 import members from "../members";
 
 export default function TeamPage() {
@@ -9,27 +9,14 @@ export default function TeamPage() {
 		<>
 			<Navbar pageLocation="Team" hideInitialNav={false} />
 			<Background>
-				<div className="text-center font-bold md:pb-4 mt-20 md:m-auto">
-					<span className="text-white text-2xl md:text-4xl">Meet the Team</span>
-				</div>
-				<div className="sm:w-1/2 lg:w-2/3 m-auto grid lg:grid-cols-2 xl:grid-cols-3">
-					{members
-						.filter((m) => m.name != "TBD")
-						.map((m) => (
-							<Team
-								name={m.name}
-								email={m.email}
-								position={m.position}
-								pic={m.pic}
-								major={m.major}
-								minor={m.minor}
-								depth={m.depth}
-								year={m.year}
-								lines={m.lines}
-								key={m.name}
-							/>
-						))}
-				</div>
+				<div className="min-h-screen bg-gray-1000 p-8">
+                    <h1 className="text-4xl font-bold text-center mb-8 text-black-800">Our Team</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                        {members.filter((m)=>m.name!='TBD').map((member, index) => (
+                        <TeamMemberCard key={index} member={member} />
+                        ))}
+                    </div>
+                </div>
 			</Background>
 			<Footer />
 		</>
