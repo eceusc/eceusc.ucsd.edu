@@ -5,15 +5,6 @@ import { Event } from "@/app/types";
 
 const eventsList : Event[] = [
     {
-      title: 'Fall General Body Meeting',
-      date: '10/8 MON',
-      time: '5:30-7:30PM',
-      location: 'Henry Booker Room, Jacobs Hall 2nd Floor',
-      information: 'Join us for our Fall GBM! Learn about our organization, fall plans, and enjoy free pizza while meeting fellow ECE students.',
-      tag: 'social',
-      rsvpLink: 'https://forms.google.com/example1',
-    },
-    {
       title: 'WECE Cat Cafe Social',
       date: '10/12 SUN',
       time: '2-3PM',
