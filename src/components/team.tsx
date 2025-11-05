@@ -1,20 +1,7 @@
 "use client";
-
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Box, Chip, List, ListItem, ListItemText } from '@mui/material';
-import CodeIcon from '@mui/icons-material/Code';
-import SchoolIcon from '@mui/icons-material/School';
-import PersonIcon from '@mui/icons-material/Person';
 import { Briefcase, User, Mail, GraduationCap, BookOpen, Target } from "lucide-react";
-
-import members from "../app/members";
-import Image from "next/image";
 import { Member } from "@/app/types";
-import { grey } from '@mui/material/colors';
 
 
 // --- MUI Card Component ---
