@@ -56,7 +56,7 @@ const eventsList : Event[] = [
       location: 'Henry Booker Room, Jacobs Hall 2nd Floor',
       information: 'Whether you’re a new freshman or have survived a few years in UCSD, we welcome you to join us in a close chat with your professors across the ECE and CSE departments to gain insight on their work and journey as a woman in the space. Although the event is aimed at WECE students, it is open to anyone. Food will be provided! Our featured professors are Professor Naghizadeh, Professor Ding, Professor Shi, Professor Saha',
       tag: 'wece',
-      rsvpLink: 'https://eceusc.slack.com/archives/C09KCE2TACA/p1761185652903459',
+      rsvpLink: 'https://docs.google.com/forms/d/e/1FAIpQLScUgBpCzuMK_UrWVWScIKvPRvH9vO6G1-x-zmLJt3ahZyrzcA/viewform',
     },
     {
       title: 'Intern Panel',
@@ -64,8 +64,8 @@ const eventsList : Event[] = [
       time: '5:00-6:00PM',
       location: 'ECE 2315, Jacobs Hall 2nd Floor',
       information: 'The ECE Undergraduate Student Council presents a panel of your peers who interned this summer. Get first-hand advice on landing an internship, what the work is really like, and how to maximize your experience. Bring your questions!',
-      tag: 'wece',
-      rsvpLink: 'https://eceusc.slack.com/archives/C09KCE2TACA/p1761185652903459',
+      tag: 'professional',
+      rsvpLink: 'https://forms.gle/e3JG56Jkro9SuoRz9',
     }
   ];
 
