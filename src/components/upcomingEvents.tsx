@@ -66,6 +66,24 @@ const eventsList : Event[] = [
       information: 'The ECE Undergraduate Student Council presents a panel of your peers who interned this summer. Get first-hand advice on landing an internship, what the work is really like, and how to maximize your experience. Bring your questions!',
       tag: 'professional',
       rsvpLink: 'https://forms.gle/e3JG56Jkro9SuoRz9',
+    },
+    {
+      title: "Prof. Hah-Phuc Le's Lab tour",
+      date: '1/12 MON',
+      time: '5:00-6:00PM',
+      location: 'FAH 2401',
+      information: "Join us for Prof.Hanh - Phuc Le's Integrated Power Electronics and Energy-efficient systems Lab tour",
+      tag: 'academic',
+      rsvpLink: 'https://forms.gle/63Dvh1LBqh2ERsh47',
+    },
+    {
+      title: "CERAMICS TILE GLAZING",
+      date: '1/25 SUN',
+      time: '12:00-2:00PM',
+      location: 'Craft Center',
+      information: "Join WECE in a ceramic tile glazing as a way to start off the cozy winter quarter! Be sure to sign up fast as we only have 12 spots available. More information about location and logistics will be sent out closer to the date.",
+      tag: 'wece',
+      rsvpLink: 'https://docs.google.com/forms/d/e/1FAIpQLSezMGdPaF5BANOMLY0-iI2B7er69k2pV4pxAQDDKqVye2XNhQ/viewform',
     }
   ];
 
