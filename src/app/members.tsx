@@ -106,20 +106,6 @@ let members : Member[] = [
 		year: "Third Year",
 	},
 	{
-		name: "Aaditya Pillai",
-		position: "Professional Chair",
-		major: "Electrical Engineering",
-		minor: null,
-		depth: null, //must ask
-		lines: [
-			"I’m a diehard Warriors fan"
-,
-		],
-		pic: aaditya_pillai_img.src,
-		email: "a2pillai@ucsd.edu",
-		year: "Second Year",
-	},
-	{
 		name: "Hlwan Paing",
 		position: "Academic Chair",
 		major: "Electrical Engineering",
